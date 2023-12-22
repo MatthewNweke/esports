@@ -5,14 +5,7 @@ import StockStepsCard from './utils/cards/StockStepsCard';
 
 const StockSteps = ({ title }) => {
   return (
-    <div className="px-5 lg:px-10 xl:px-20 py-[3rem] my-[3rem] bg-gray-100">
-      <p className="text-4xl font-bold tracking-wide text-[#1A2433] text-center">
-        Available <span className="text-[#D04029]">Plans</span>
-      </p>
-      <p className='text-center mt-5'>
-        To make a solid investment, you have to know where you are investing.
-        Find a plan which is best for you.
-      </p>
+    <div className="">
       <div className="flex flex-wrap gap-10 my-[4rem] justify-center items-center">
         <StockStepsCard
           daily={'For 30 day'}

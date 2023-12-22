@@ -1,8 +1,4 @@
-import BluetoothIcon from './utils/icons/BluetoothIcon';
-import DropdownIcon from './utils/icons/DropdownIcon';
-import EmailIcon from './utils/icons/EmailIcon';
-import PhoneIcon from './utils/icons/PhoneIcon';
-import ProfileIcon from './utils/icons/ProfileIcon';
+import { Link } from "react-router-dom";
 
 
 
