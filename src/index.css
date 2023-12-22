@@ -1,0 +1,110 @@
+@font-face {
+  font-family: 'Laviossa';
+  src: url('assets/fonts/Laviossa-Medium.otf') format('woff2');
+}
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@layer utilities {
+  .no-scrollbar::-webkit-scrollbar {
+    display: none;
+  }
+
+  .no-scrollbar {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
+
+  .no-number-arrows::-webkit-outer-spin-button,
+  .no-number-arrows::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+  }
+
+  .no-number-arrows[type='number'] {
+    -moz-appearance: textfield;
+  }
+
+  .laviossa {
+    font-family: 'Laviossa', system-ui, Avenir, Helvetica, Arial, sans-serif;
+  }
+}
+
+:root {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  color-scheme: light dark;
+  color: #1a1a1a;
+  background-color: #fff;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-text-size-adjust: 100%;
+}
+
+a {
+  font-weight: 500;
+  color: #646cff;
+  text-decoration: inherit;
+}
+a:hover {
+  color: #535bf2;
+}
+
+body {
+  margin: 0;
+  width: 100%;
+  min-width: 320px;
+  min-height: 100vh;
+}
+
+h1 {
+  font-size: 3.2em;
+  line-height: 1.1;
+}
+
+.stocks {
+  background-image: url('/bg.png');
+  background-repeat: no-repeat;
+  /* background-color: #a53aa1; */
+  background-color: #41073f;
+  background-size: cover;
+  background-blend-mode: screen;
+}
+.etf,
+.data-etf,
+.chart,
+.commission {
+  background-position: center;
+  background-size: 50%;
+}
+.etf {
+  background: url('/box1.png') no-repeat;
+}
+.data-etf {
+  background: url('/box2.png') no-repeat;
+}
+.chart {
+  background: url('/box3.png') no-repeat;
+}
+.commission {
+  background: url('/box4.png') no-repeat;
+}
+
+@media (prefers-color-scheme: light) {
+  :root {
+    color: #213547;
+    background-color: #ffffff;
+  }
+  a:hover {
+    color: #747bff;
+  }
+  button {
+    background-color: #f9f9f9;
+  }
+}
