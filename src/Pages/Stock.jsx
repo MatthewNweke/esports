@@ -6,6 +6,7 @@ import ChooseCard from '../Components/utils/ChooseCard';
 import StockCardsContainer from '../components/utils/StockCardsContainer';
 import StockSwiper from '../Components/StockSwiper';
 import OptionFAQDropdown from '../Components/OptionFAQDropdown';
+import { Link } from 'react-router-dom';
 
 const Stock = () => {
   return (
@@ -30,20 +31,15 @@ const Stock = () => {
             <br />
             security of your investment.
           </ul>
-          <button className="text-[black] font-bold py-3 px-5 bg-[#D04029] rounded-lg">
-            Start learning
-          </button>
+          <Link to="/LogIn">
+            <button className="text-[black] font-bold py-3 px-5 bg-[#D04029] rounded-lg">
+              Start learning
+            </button>
+          </Link>
         </div>
       </div>
 
-      
-
-<AboutUs/>
-
-
-
-
-
+      <AboutUs />
 
       {/* <StockSwiper /> */}
       <div className="px-5 lg:px-10 xl:px-20 py-[3rem] my-[3rem] bg-gray-100">

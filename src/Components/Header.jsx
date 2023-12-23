@@ -10,13 +10,13 @@ const Header = () => {
       <div className="flex items-center gap-16">
         <p className="font-semibold text-white text-sm cursor-pointer">Home</p>
         <div className=" cursor-pointer">
-          <p className="font-semibold text-white text-sm">Plan</p>
+         <Link to="/Plan"><p className="font-semibold text-white text-sm">Plan</p></Link> 
         </div>
         <div className="  cursor-pointer">
-          <p className="font-semibold text-white text-sm">About</p>
+        <Link to="/about"><p className="font-semibold text-white text-sm">About</p></Link>  
         </div>
         <div className=" cursor-pointer">
-          <p className="font-semibold text-white text-sm">Contact</p>
+       <Link to="/contact"><p className="font-semibold text-white text-sm">Contact</p></Link>   
         </div>
         <div className="flex items-center gap-2 cursor-pointer">
 

@@ -1,8 +1,6 @@
-import { AiOutlineInstagram } from 'react-icons/ai';
-import { BiLogoFacebook } from 'react-icons/bi';
-import { RiTwitterXLine } from 'react-icons/ri';
+
 import data from '../data/footer.json';
-import FooterItem from './common/FooterItem';
+
 
 export default function Footer() {
   console.log({ data });
