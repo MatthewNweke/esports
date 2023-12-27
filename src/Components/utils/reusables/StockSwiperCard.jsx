@@ -1,11 +1,11 @@
 const StockSwiperCard = ({ image, items,about }) => {
   return (
     <div className="relative flex flex-col items-center">
-      <div className="h-[15rem] md:h-[20rem] w-full md:w-[30rem] bg-[#D04029] border-[#D0402980] rounded-xl p-5  flex flex-col justify-center">
+      <div className="h-[20rem] max-md:h-[25rem] w-full md:w-[30rem] bg-[#D04029] border-[#D0402980] rounded-xl p-5  flex flex-col justify-center">
         <div className=" md:text-xl  text-[white] w-[100%] h-[100%] relative">
           {items?.map((item, index) => (
             <div>
-              <p key={index} className="text-[1.1rem]">
+              <p key={index} className="text-[1.1rem] z-50 text-center leading-8 max-md:text-[1.2rem]">
                 {item}
               </p>
               

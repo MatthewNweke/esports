@@ -47,7 +47,7 @@ function OptionFAQDropdown() {
 
   return (
     <div>
-    <div className=" mx-auto my-20  w-[50%] ">
+    <div className=" mx-auto my-20  w-[50%] max-md:w-[70%] max-sm:w-[90%]">
       <button
         onClick={toggleDropdown1}
         className={`flex justify-between w-[100%] mb-5 border  shadow-sm py-5 rounded-lg px-4  border-[#D04029] text-sm font-medium text-[white] focus:outline-none 
@@ -75,9 +75,9 @@ function OptionFAQDropdown() {
       </button>
 
       {isOpen1 && (
-        <div className=" mt-2  shadow-lg text-white py-2 ring-black ring-opacity-5 w-[100%]">
+        <div className=" mt-2 shadow-lg text-white py-2 ring-black ring-opacity-5 w-[100%]">
           {/* Dropdown content here */}
-          <div className="py-1">
+          <div className="py-1 w-[100%]">
             Deposit and withdrawal are available for at any time. Be sure, that
             your funds are not used in any ongoing trade before the withdrawal.
             The available amount is shown in your dashboard on the main page of

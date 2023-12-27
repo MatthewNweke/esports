@@ -7,7 +7,7 @@ import StockCard from './cards/StockCard';
 
 const StockCardsContainer = () => {
   return (
-    <div className="px-5 lg:px-10 xl:px-20 my-[1rem] w-full flex justify-center mb-10 gap-10 flex-wrap">
+    <div className="px-5 my-[1rem] w-full flex justify-center mb-10 gap-[10px] flex-wrap ">
       <StockCard
         image={teamA}
         title={'Jennifer Kingery'}
