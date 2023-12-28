@@ -1,7 +1,7 @@
-import AboutUs from '../Components/common/AboutUs';
-import CoinBg from '../Components/common/CoinBg';
+import AboutUs from '../components/common/AboutUs';
+import CoinBg from '../components/common/CoinBg';
 import MainLayout from '../components/MainLayout';
-import OptionFAQDropdown from '../Components/OptionFAQDropdown';
+import OptionFAQDropdown from '../components/OptionFAQDropdown';
 
 const About = () => {
   return (

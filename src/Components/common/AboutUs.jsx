@@ -16,7 +16,7 @@ const AboutUs = () => {
         </video>
 
         <div>
-          <p className="mb-10 text-center text-[2rem] font-bold">
+          <p className="mb-10 text-center text-[2rem] font-bold max-sm:text-[1.5rem]">
             About <span className="text-[#D04029] ">Us</span>
           </p>
           <p className="md:text-lg text-gray-700">
@@ -29,9 +29,9 @@ const AboutUs = () => {
         </div>
       </div>
 
-      <div className="text-[1.2rem] my-20 pl-5 lg:pl-10 xl:pl-20">
+      <div className="text-[1rem] my-20 pl-5 lg:pl-10 xl:pl-20">
         <div>
-          <p className="mb-10 text-[1.4rem] font-bold">Legal Information</p>
+          <p className="mb-10 text-[1.4rem] font-bold max-sm:text-[1.2rem] max-sm:mb-5">Legal Information</p>
           Fxtradings is one of the most reliable diversified financial
           investment service provider in the world. Our fundamental mission is
           to help customers and clients achieve their financial objectives. With
@@ -42,7 +42,7 @@ const AboutUs = () => {
           standards in trades and asset management.
         </div>
         <div className="mt-10">
-          <p className="mb-10 text-[1.4rem] font-bold">
+          <p className="mb-10 text-[1.4rem] font-bold max-sm:text-[1.2rem] max-sm:mb-5">
             Safety & Fraud Protection
           </p>
           With over $5.3 Trillion traded daily in the market, we are dedicated

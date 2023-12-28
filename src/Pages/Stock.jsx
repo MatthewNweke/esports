@@ -1,9 +1,9 @@
 import { Link } from 'react-router-dom';
-import OptionFAQDropdown from '../Components/OptionFAQDropdown';
-import StockSwiper from '../Components/StockSwiper';
-import AboutUs from '../Components/common/AboutUs';
-import ChooseCard from '../Components/utils/ChooseCard';
-import TableRendering from '../Components/utils/cards/TableRedering';
+import OptionFAQDropdown from '../components/OptionFAQDropdown';
+import StockSwiper from '../components/StockSwiper';
+import AboutUs from '../components/common/AboutUs';
+import ChooseCard from '../components/utils/ChooseCard';
+import TableRendering from '../components/utils/cards/TableRedering';
 import bg_fxtrad from '../assets/bg_fxtrad.jpg';
 import MainLayout from '../components/MainLayout';
 import StockSteps from '../components/StockSteps';
@@ -15,13 +15,13 @@ const Stock = () => {
       <div className="bg-[#30022ECC] bg-opacity-10 relative w-full h-[100vh] ">
         <img src={bg_fxtrad} alt="" className="w-full h-full object-cover" />
         <div className="absolute flex flex-col justify-center items-start gap-12 top-0 right-0 bottom-0 left-0  bg-opacity-10 text-white pl-3 lg:pl-5 xl:pl-10">
-          <p className="laviossa text-[2.6rem] font-bold w-[30rem] max-lg:text-[2.4rem] max-lg:w-[100%] max-md:text-[2rem]  ">
+          <p className="laviossa text-[2.6rem] font-bold w-[30rem] max-lg:text-[2.4rem] max-lg:w-[100%] max-md:text-[2rem]  max-sm:text-[1.5rem]">
             Invest for Future in a Stable Platform <br />
             <p className="text-[#D04029]">
               Rely on us for a <br /> better future
             </p>
           </p>
-          <ul className="font-medium text-[1.2rem] list-disc list-inside w-[100%] max-[300px]:text-[1rem]">
+          <ul className="font-medium text-[1.2rem] list-disc list-inside w-[100%] max-sm:text-[1rem]">
             Fx Tradings Limited is a professional, and reliable company that{' '}
             <br />
             provides you with the most necessary features that will make your{' '}
@@ -44,7 +44,7 @@ const Stock = () => {
 
       {/* <StockSwiper /> */}
       <div className="px-5 lg:px-10 xl:px-20 py-[3rem] my-[3rem] bg-gray-100">
-        <p className="text-4xl font-bold tracking-wide text-[#1A2433] text-center">
+        <p className="text-[2rem] font-bold tracking-wide text-[#1A2433] text-center max-sm:text-[1.5rem]">
           Available <span className="text-[#D04029]">Plans</span>
         </p>
         <p className="text-center mt-5">
@@ -56,11 +56,11 @@ const Stock = () => {
 
       <div className="bg-gradient-to-br from-black py-20 to-opacity-50 flex flex-col items-center gap-16 justify-center text-[#fff]">
         <div className="text-center">
-          <p className="text-[2.2rem]">
+          <p className="text-[2rem] max-sm:text-[1.5rem]">
             Why Choose <br />{' '}
             <span className="text-[#D04029] ">FxtradingsLimited</span>{' '}
           </p>
-          <p className="text-[1.2rem]">
+          <p className="text-[1rem]">
             Our goal is to provide our investors with a reliable source of high
             income, while <br /> minimizing any possible risks and offering a
             high-quality service.
@@ -126,10 +126,10 @@ const Stock = () => {
       </div>
       <div className="py-10">
         <div className="text-center px-5">
-          <p className="text-[2rem] font-semibold">
+          <p className="text-[2rem] font-semibold max-sm:text-[1.5rem]">
             Profit <span className="text-[#D04029] ">Calculator</span>
           </p>
-          <p className="my-[1rem] text-[1.2rem]">
+          <p className="my-[1rem] text-[1rem]">
             You must know the calculation before investing in any plan, so you
             never make mistakes. <br /> Check the calculation and you will get
             as our calculator says.
@@ -221,8 +221,8 @@ const Stock = () => {
         </div>
       </div>
 
-      <div className="bg-black text-white pt-20">
-        <p className="text-center text-[1.2rem] px-4">
+      <div className="bg-black text-white pt-20 ">
+        <p className="text-center text-[1rem] px-4">
           Here is the log of the most recent transactions including withdraw and
           deposit made by our <br /> users.
         </p>
@@ -233,10 +233,10 @@ const Stock = () => {
       <StockSwiper />
 
       <div className="text-center mt-20">
-        <p className="text-[2rem] font-semibold">
+        <p className="text-[2rem] font-semibold max-sm:text-[1.5rem]">
           Our Expert<span className="text-[#D04029]">Team Members</span>
         </p>
-        <p className="my-[1rem] text-[1.2rem]">
+        <p className="my-[1rem] text-[1rem] ">
           We have a great team including developers, designers, and Traders. The
           Team always working <br /> hard to give you the maximum profit.
         </p>
@@ -245,10 +245,10 @@ const Stock = () => {
 
       <div className="bg-[black] min-h-[50vh] py-10">
         <div className="text-center my-20 ">
-          <p className="text-[2rem] font-semibold">
+          <p className="text-[2rem] font-semibold text-white max-sm:text-[1.5rem]">
             Frequently Asked <span className="text-[#D04029]">Questions</span>
           </p>
-          <p className="my-[1rem] text-[1.2rem] text-white">
+          <p className="my-[1rem] text-[1rem] text-white">
             We answer some of your Frequently Asked Questions regarding our
             platform. If you have a <br />
             query that is not answered here, Please contact us.

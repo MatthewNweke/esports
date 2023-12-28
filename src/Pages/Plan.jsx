@@ -1,6 +1,6 @@
 import MainLayout from '../components/MainLayout';
 import StockSteps from '../components/StockSteps';
-import CoinBg from '../Components/common/CoinBg';
+import CoinBg from '../components/common/CoinBg';
 
 const Plan = () => {
   return (

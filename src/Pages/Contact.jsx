@@ -1,6 +1,6 @@
-import CoinBg from '../Components/common/CoinBg';
+import CoinBg from '../components/common/CoinBg';
 import MainLayout from '../components/MainLayout';
-import AddressCard from '../Components/utils/cards/AddressCard';
+import AddressCard from '../components/utils/cards/AddressCard';
 
 const Contact = () => {
   return (
