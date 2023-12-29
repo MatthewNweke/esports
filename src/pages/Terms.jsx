@@ -1,5 +1,5 @@
 import MainLayout from '../components/MainLayout';
-import CoinBg from '../Components/common/CoinBg';
+import CoinBg from '../components/common/CoinBg';
 
 const Terms = () => {
   return (
