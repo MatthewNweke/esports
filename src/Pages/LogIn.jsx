@@ -4,17 +4,27 @@ const LogIn = () => {
   return (
     <div>
       <MainLayout>
-        <div className="bg-black p-10 rounded-lg">
+        <div className=" flex flex-col bg-black p-10 rounded-lg my-32 mx-auto w-[35%]">
+          <div className="h-[15rem] px-5 flex flex-col justify-center gap-5 text-white border-2 border-solid border-[#D0402980] border-b-0 rounded-lg rounded-bl-0 rounded-br-0">
+            
+              {' '}
+               <p className='text-[2rem] '>Welcome To <br /> <span className='text-[#D04029] '>FxtradingsLimited</span> </p>
+              <p>
+                Our goal is to provide our investors with a reliable source of
+                high income, join us today.
+              </p>
+            
+          </div>
           <form
             action=""
-            className="text-white w-[35%] flex flex-col p-10 rounded-lg justify-center items-center border-2 border-solid border-[#D0402980] py-10 px-5 my-0 mx-auto"
+            className="text-white flex flex-col p-10 w-[100%] rounded-lg justify-center items-center border-2 border-solid border-[#D0402980] py-10 px-5 "
             style={{ boxShadow: '0 3px 15px rgba(208, 64, 41, 0.5)' }}
           >
             <div className="flex flex-col gap-4 mb-5">
               <label htmlFor="">FirstName</label>
               <input
                 type="text"
-                className="border-2 border-solid border-[#D0402980] focus:border-[#D04029] bg-[transparent]  outline-none rounded-lg px-2 py-3 w-[25rem]"
+                className="border-2 border-solid border-[#D0402980] focus:border-[#D04029] bg-[transparent]  outline-none rounded-lg px-2 py-3 w-[100%]"
               />
             </div>
             <div className="flex flex-col gap-4 mb-5">
@@ -96,12 +106,13 @@ const LogIn = () => {
                 </span>
               </p>
             </div>
-            <div className=' w-[25rem]'>
+            <div className=" w-[25rem]">
               <button className="text-black font-bold my-5 py-3 px-4 rounded-lg bg-[#D04029]">
                 SignUp Now
               </button>
               <p>
-                Have an account? <span className='text-[#D04029] cursor-pointer'>Login</span>{' '}
+                Have an account?{' '}
+                <span className="text-[#D04029] cursor-pointer">Login</span>{' '}
               </p>
             </div>
           </form>

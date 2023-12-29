@@ -44,7 +44,7 @@ const Header = () => {
         } bg-[#00000090]`}
       >
         <div className="flex flex-col items-center gap-4 max-lg:gap-10 ">
-          <Link to="/">
+          <Link to="/Stock">
             <p className="font-semibold text-white text-sm cursor-pointer max-lg:text-[1.2rem]">
               Home
             </p>

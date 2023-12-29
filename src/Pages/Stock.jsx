@@ -12,10 +12,10 @@ import StockCardsContainer from '../components/utils/StockCardsContainer';
 const Stock = () => {
   return (
     <MainLayout>
-      <div className="bg-[#30022ECC] bg-opacity-10 relative w-full h-[100vh] ">
+      <div className="bg-[#30022ECC] bg-opacity-10 relative w-full h-[90vh] ">
         <img src={bg_fxtrad} alt="" className="w-full h-full object-cover" />
-        <div className="absolute flex flex-col justify-center items-start gap-12 top-0 right-0 bottom-0 left-0  bg-opacity-10 text-white pl-3 lg:pl-5 xl:pl-10">
-          <p className="laviossa text-[2.6rem] font-bold w-[30rem] max-lg:text-[2.4rem] max-lg:w-[100%] max-md:text-[2rem]  max-sm:text-[1.5rem]">
+        <div className="absolute flex flex-col justify-center items-start gap-12 top-[5rem] bg-opacity-10 text-white pl-3 lg:pl-5 xl:pl-10">
+          <p className="laviossa text-[2.6rem] font-bold w-[30rem] max-lg:text-[2.4rem] max-lg:w-[100%] max-md:text-[2rem]  max-sm:text-[1.5rem] max-sm:m-0">
             Invest for Future in a Stable Platform <br />
             <p className="text-[#D04029]">
               Rely on us for a <br /> better future
