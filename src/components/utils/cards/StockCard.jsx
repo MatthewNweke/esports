@@ -4,7 +4,7 @@ import EducationIcon from '../icons/EducationIcon';
 
 const StockCard = ({ image, title, description }) => {
   return (
-    <div className=" w-[20rem]  max-[400px]:w-[100%] lg:w-[13rem] shadow-lg xl:w-[15rem] min-[1440px]:w-[18rem]  rounded-lg bg-[#101113] text-[white] hover:bg-[#D04029]  transform hover:scale-200 transition-transform duration-300">
+    <div className=" w-[20rem]  max-[400px]:w-[100%] lg:w-[13rem] shadow-lg xl:w-[15rem] min-[1440px]:w-[18rem]  rounded-lg bg-[#101113] text-[white] hover:bg-[#D4B716]   transform hover:scale-200 transition-transform duration-300">
       <img
         src={image}
         alt=""

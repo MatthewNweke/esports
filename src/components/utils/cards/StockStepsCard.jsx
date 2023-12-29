@@ -13,7 +13,7 @@ const StockStepsCard = ({ title, returns, daily, total, amount }) => {
       }}
     >
       <div className="mb-[1rem] text-center">
-        <p className="font-semibold text-[2.2rem] mb-3  text-[#D04029]">
+        <p className="font-semibold text-[2.2rem] mb-3  text-[#D4B716] ">
           {title}
         </p>
         <p className="font-medium text-lg text-[#fff]  border-t-[1px] border-b-[1px] py-2 px-5 border-[#D0402959]">
@@ -29,8 +29,8 @@ const StockStepsCard = ({ title, returns, daily, total, amount }) => {
           {total}
         </p>
         <div className='mt-10 text-center flex flex-col gap-5 items-center'>
-          <p className="font-medium  text-[#D04029] text-[1.5rem]">{amount}</p>
-          <button className="bg-[#D04029]  py-2 rounded-[0.4rem] w-[50%]">Invest now</button>
+          <p className="font-medium  text-[#D4B716]  text-[1.5rem]">{amount}</p>
+          <button className="bg-[#D4B716]   py-2 rounded-[0.4rem] w-[50%]">Invest now</button>
         </div>
       </div>
     </div>

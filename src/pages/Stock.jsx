@@ -14,15 +14,15 @@ const Stock = () => {
     <MainLayout>
       <div className="bg-[#30022ECC] bg-opacity-10 relative w-full h-[90vh] ">
         <img src={bg_fxtrad} alt="" className="w-full h-full object-cover" />
-        <div className="absolute flex flex-col justify-center items-start gap-12 top-[5rem] bg-opacity-10 text-white pl-3 lg:pl-5 xl:pl-10">
-          <p className="laviossa text-[2.6rem] font-bold w-[30rem] max-lg:text-[2.4rem] max-lg:w-[100%] max-md:text-[2rem]  max-sm:text-[1.5rem] max-sm:m-0">
+        <div className="absolute flex flex-col justify-center  gap-12 top-[5rem] bg-opacity-10 text-white pl-3 lg:pl-5 xl:pl-10 max-md:top-[4rem] max-sm:top-[3rem]">
+          <div className="laviossa text-[2.6rem] font-bold w-[30rem] max-lg:text-[2.4rem] max-lg:w-[100%] max-md:text-[2rem]  max-sm:text-[1.5rem] max-sm:m-0">
             Invest for Future in a Stable Platform <br />
-            <p className="text-[#D04029]">
+            <p className="text-[#D4B716] ">
               Rely on us for a <br /> better future
             </p>
-          </p>
+          </div>
           <ul className="font-medium text-[1.2rem] list-disc list-inside w-[100%] max-sm:text-[1rem]">
-            Fx Tradings Limited is a professional, and reliable company that{' '}
+            Vault Coin Limited is a professional, and reliable company that{' '}
             <br />
             provides you with the most necessary features that will make your{' '}
             <br />
@@ -33,9 +33,10 @@ const Stock = () => {
             security of your investment.
           </ul>
           <Link to="/LogIn">
-            <button className="text-[black] font-bold py-3 px-5 bg-[#D04029] rounded-lg">
+            <button className="text-[black] font-bold py-3 px-5 bg-[#D4B716]  rounded-lg">
               Start learning
             </button>
+        
           </Link>
         </div>
       </div>
@@ -45,7 +46,7 @@ const Stock = () => {
       {/* <StockSwiper /> */}
       <div className="px-5 lg:px-10 xl:px-20 py-[3rem] my-[3rem] bg-gray-100">
         <p className="text-[2rem] font-bold tracking-wide text-[#1A2433] text-center max-sm:text-[1.5rem]">
-          Available <span className="text-[#D04029]">Plans</span>
+          Available <span className="text-[#D4B716] ">Plans</span>
         </p>
         <p className="text-center mt-5">
           To make a solid investment, you have to know where you are investing.
@@ -55,10 +56,10 @@ const Stock = () => {
       </div>
 
       <div className="bg-gradient-to-br from-black py-20 to-opacity-50 flex flex-col items-center gap-16 justify-center text-[#fff]">
-        <div className="text-center">
+        <div className="text-center max-sm:px-5">
           <p className="text-[2rem] max-sm:text-[1.5rem]">
             Why Choose <br />{' '}
-            <span className="text-[#D04029] ">FxtradingsLimited</span>{' '}
+            <span className="text-[#D4B716]  ">FxtradingsLimited</span>{' '}
           </p>
           <p className="text-[1rem]">
             Our goal is to provide our investors with a reliable source of high
@@ -127,7 +128,7 @@ const Stock = () => {
       <div className="py-10">
         <div className="text-center px-5">
           <p className="text-[2rem] font-semibold max-sm:text-[1.5rem]">
-            Profit <span className="text-[#D04029] ">Calculator</span>
+            Profit <span className="text-[#D4B716]  ">Calculator</span>
           </p>
           <p className="my-[1rem] text-[1rem]">
             You must know the calculation before investing in any plan, so you
@@ -140,13 +141,13 @@ const Stock = () => {
           className="relative border-2 border-solid border-[#D0402980] shadow-md w-[60%] h-[20rem] my-0 mx-auto rounded-lg max-lg:w-[70%] max-md:w-[80%] max-sm:w-[90%]"
         >
           <div className="absolute w-[100%] top-[50%] translate-y-[-50%]">
-            <div className="flex gap-[5%] justify-center mb-10">
-              <div className="w-[45%] flex flex-col gap-2">
+            <div className="flex gap-[5%] justify-center mb-10 max-sm:flex-col max-sm:items-center">
+              <div className="w-[45%] flex flex-col gap-2 max-sm:w-[95%]">
                 <label htmlFor="">Choose plan</label>
                 <select
                   name="nft"
                   id="nft"
-                  className="w-[100%] text-[#fff] py-3 px-4 rounded-lg bg-[#D04029] outline-none border-none"
+                  className="w-[100%] text-[#fff] py-3 px-4 rounded-lg bg-[#D4B716]  outline-none border-none"
                 >
                   <option value="defi" className="text-[#fff]">
                     DEFI
@@ -162,11 +163,11 @@ const Stock = () => {
                   </option>
                 </select>
               </div>
-              <div className="w-[45%] flex flex-col gap-2">
+              <div className="w-[45%] flex flex-col gap-2 max-sm:w-[95%]">
                 <label htmlFor="">Invest amount</label>
                 <input
                   type="text"
-                  className="w-[100%] py-3 px-4 rounded-lg bg-[#D04029] outline-none border-none"
+                  className="w-[100%] py-3 px-4 rounded-lg bg-[#D4B716]  outline-none border-none"
                 />
               </div>
             </div>
@@ -175,49 +176,49 @@ const Stock = () => {
               <label htmlFor="">Invest amount</label>
               <input
                 type="text"
-                className="w-[100%] py-3 px-4 rounded-lg bg-[#D04029] outline-none  border-none "
+                className="w-[100%] py-3 px-4 rounded-lg bg-[#D4B716]  outline-none  border-none "
               />
             </div>
           </div>
         </form>
       </div>
 
-      <div className="flex flex-wrap justify-around items-center bg-gradient-to-br from-black py-20 to-opacity-50 text-[#D04029] max-sm:flex-col max-sm:justify-center max-sm:gap-20">
+      <div className="flex flex-wrap justify-around items-center bg-gradient-to-br from-black py-20 to-opacity-50 text-[#D4B716]  max-sm:flex-col max-sm:justify-center max-sm:gap-20">
         <div className="flex flex-col gap-3 items-center justify-center">
-          <div className="border-[3px] relative border-solid border-[#D04029] shadow-md border-opacity-100 w-[7rem] h-[7rem] rounded-[50%] bg-[black]">
-            <div className="absolute right-0 border-[3px] border-solid border-[#D04029]  shadow-md rounded-[50%] h-[2rem] w-[2rem] bg-[black]">
+          <div className="border-[3px] relative border-solid border[#D4B716]  shadow-md border-opacity-100 w-[7rem] h-[7rem] rounded-[50%] bg-[black]">
+            <div className="absolute right-0 border-[3px] border-solid border[#D4B716]   shadow-md rounded-[50%] h-[2rem] w-[2rem] bg-[black]">
               <span className="absolute left-[50%] bottom-[50%] translate-y-[50%] translate-x-[-50%]">
                 1
               </span>
             </div>
           </div>
-          <p className="text-[#D04029] text-[1.5rem] font-semibold">
+          <p className="text-[#D4B716]  text-[1.5rem] font-semibold">
             Create Account
           </p>
         </div>
 
         <div className="flex flex-col gap-3 items-center justify-center">
-          <div className="border-[3px] relative border-solid border-[#D04029] shadow-md border-opacity-100 w-[7rem] h-[7rem] rounded-[50%] bg-[black]">
-            <div className="absolute right-0 border-[3px] border-solid border-[#D04029]  shadow-md rounded-[50%] h-[2rem] w-[2rem] bg-[black]">
+          <div className="border-[3px] relative border-solid border[#D4B716]  shadow-md border-opacity-100 w-[7rem] h-[7rem] rounded-[50%] bg-[black]">
+            <div className="absolute right-0 border-[3px] border-solid border[#D4B716]   shadow-md rounded-[50%] h-[2rem] w-[2rem] bg-[black]">
               <span className="absolute left-[50%] bottom-[50%] translate-y-[50%] translate-x-[-50%]">
                 2
               </span>
             </div>
           </div>
-          <p className="text-[#D04029] text-[1.5rem] font-semibold">
+          <p className="text-[#D4B716]  text-[1.5rem] font-semibold">
             Choose a plan
           </p>
         </div>
 
         <div className="flex flex-col gap-3 items-center justify-center">
-          <div className="border-[3px] relative border-solid border-[#D04029] shadow-md border-opacity-100 w-[7rem] h-[7rem] rounded-[50%] bg-[black]">
-            <div className="absolute right-0 border-[3px] border-solid border-[#D04029]  shadow-md rounded-[50%] h-[2rem] w-[2rem] bg-[black]">
+          <div className="border-[3px] relative border-solid border[#D4B716]  shadow-md border-opacity-100 w-[7rem] h-[7rem] rounded-[50%] bg-[black]">
+            <div className="absolute right-0 border-[3px] border-solid border[#D4B716]   shadow-md rounded-[50%] h-[2rem] w-[2rem] bg-[black]">
               <span className="absolute left-[50%] bottom-[50%] translate-y-[50%] translate-x-[-50%]">
                 3
               </span>
             </div>
           </div>
-          <p className="text-[#D04029] text-[1.5rem] font-semibold">Earn</p>
+          <p className="text-[#D4B716]  text-[1.5rem] font-semibold">Earn</p>
         </div>
       </div>
 
@@ -234,7 +235,7 @@ const Stock = () => {
 
       <div className="text-center mt-20">
         <p className="text-[2rem] font-semibold max-sm:text-[1.5rem]">
-          Our Expert<span className="text-[#D04029]">Team Members</span>
+          Our Expert<span className="text-[#D4B716] ">Team Members</span>
         </p>
         <p className="my-[1rem] text-[1rem] ">
           We have a great team including developers, designers, and Traders. The
@@ -246,7 +247,7 @@ const Stock = () => {
       <div className="bg-[black] min-h-[50vh] py-10">
         <div className="text-center my-20 ">
           <p className="text-[2rem] font-semibold text-white max-sm:text-[1.5rem]">
-            Frequently Asked <span className="text-[#D04029]">Questions</span>
+            Frequently Asked <span className="text-[#D4B716] ">Questions</span>
           </p>
           <p className="my-[1rem] text-[1rem] text-white">
             We answer some of your Frequently Asked Questions regarding our

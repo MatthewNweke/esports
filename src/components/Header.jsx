@@ -51,18 +51,29 @@ const Header = () => {
           </Link>
           <div className="cursor-pointer">
             <Link to="/Plan">
-              <p className="font-semibold text-white text-sm max-lg:text-[1.2rem]">Plan</p>
+              <p className="font-semibold text-white text-sm max-lg:text-[1.2rem]">
+                Plan
+              </p>
             </Link>
           </div>
           <div className="cursor-pointer">
             <Link to="/about">
-              <p className="font-semibold text-white text-sm max-lg:text-[1.2rem]">About</p>
+              <p className="font-semibold text-white text-sm max-lg:text-[1.2rem]">
+                About
+              </p>
             </Link>
           </div>
           <div className="cursor-pointer">
             <Link to="/contact">
-              <p className="font-semibold text-white text-sm max-lg:text-[1.2rem]">Contact</p>
+              <p className="font-semibold text-white text-sm max-lg:text-[1.2rem]">
+                Contact
+              </p>
             </Link>
+          </div>
+          <div className="cursor-pointer">
+            <select name="language" id="language" className="cursor-pointer">
+              <option value="language">English</option>
+            </select>
           </div>
         </div>
       </div>

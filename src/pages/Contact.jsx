@@ -39,7 +39,7 @@ const Contact = () => {
                     type="text"
                     name=""
                     id=""
-                    className="border-2 border-solid border-[#D0402980] bg-black outline-none rounded-lg py-3 px-2 focus:border-[1px] focus:border-[#D04029]"
+                    className="border-2 border-solid border-[#D0402980] bg-black outline-none rounded-lg py-3 px-2 focus:border-[1px] focus:border-[#D4B716] "
                   />
                 </div>
 
@@ -49,7 +49,7 @@ const Contact = () => {
                     type="email"
                     name=""
                     id=""
-                    className="border-2 border-solid border-[#D0402980] bg-black outline-none rounded-lg py-3 px-2 focus:border-[1px] focus:border-[#D04029]"
+                    className="border-2 border-solid border-[#D0402980] bg-black outline-none rounded-lg py-3 px-2 focus:border-[1px] focus:border-[#D4B716] "
                   />
                 </div>
               </div>
@@ -59,7 +59,7 @@ const Contact = () => {
                   type="text"
                   name=""
                   id=""
-                  className="border-2 border-solid border-[#D0402980] bg-black outline-none rounded-lg py-3 px-2 focus:border-[1px] focus:border-[#D04029]"
+                  className="border-2 border-solid border-[#D0402980] bg-black outline-none rounded-lg py-3 px-2 focus:border-[1px] focus:border-[#D4B716] "
                 />
               </div>
 
@@ -69,7 +69,7 @@ const Contact = () => {
                 id=""
                 className="border-2 border-solid border-[#D0402980] bg-black outline-none rounded-lg py-3 px-2 h-[10rem] w-[100%]"
               />
-              <button className="text-[black]  w-[25%] font-bold py-3  bg-[#D04029] rounded-lg max-sm:w-[40%]">
+              <button className="text-[black]  w-[25%] font-bold py-3  bg-[#D4B716]  rounded-lg max-sm:w-[40%]">
                 Send Message
               </button>
             </form>
