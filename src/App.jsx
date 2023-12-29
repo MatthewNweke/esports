@@ -1,12 +1,12 @@
 import { Route, Routes } from 'react-router-dom';
 import './App.css';
-import Stock from './Pages/Stock';
-import Plan from './Pages/Plan';
-import About from './Pages/About';
-import Contact from './Pages/Contact';
-import LogIn from './Pages/LogIn';
-import PrivacyPolicy from './Pages/PrivacyPolicy';
-import Terms from './Pages/Terms';
+import About from './pages/About';
+import Contact from './pages/Contact';
+import LogIn from './pages/LogIn';
+import Plan from './pages/Plan';
+import PrivacyPolicy from './pages/PrivacyPolicy';
+import Stock from './pages/Stock';
+import Terms from './pages/Terms';
 
 
 
