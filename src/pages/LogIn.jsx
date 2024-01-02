@@ -4,11 +4,11 @@ const LogIn = () => {
   return (
     <div className=' bg-black'>
       <MainLayout>
-        <div className=" flex flex-col bg-black p-10 rounded-lg my-32 mx-auto w-[40%] max-xl:w-[60%] max-lg:w-[70%] max-sm:w-[100%] max-sm:p-4">
+        <div className=" flex flex-col bg-black p-10 rounded-lg my-32 mx-auto w-[40%] max-xl:w-[60%] max-lg:w-[70%] max-sm:w-[100%] max-sm:p-1">
           <div className="h-[15rem] px-5 flex flex-col justify-center gap-5 text-white border-2 border-solid border-[#D4B71680] border-b-0 rounded-lg rounded-bl-0 rounded-br-0">
             
               {' '}
-               <p className='text-[2rem] '>Welcome To <br /> <span className='text-[#D4B716]  '>VaultCoinLimited</span> </p>
+               <p className='text-[2rem] max-sm:text-[1.5rem]'>Welcome To <br /> <span className='text-[#D4B716]  '>VaultCoinLimited</span> </p>
               <p>
                 Our goal is to provide our investors with a reliable source of
                 high income, join us today.

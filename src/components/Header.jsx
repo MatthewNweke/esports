@@ -10,7 +10,7 @@ const Header = () => {
 
   return (
     <div className="w-full flex bg-[#00000090] shadow-md fixed z-40 top-0 left-0 justify-around max-lg:block ">
-      <div className="flex justify-between items-center py-5 px-5 lg:px-10 xl:px-20">
+      <div className="flex justify-between items-center py-4 px-5 lg:px-10 xl:px-20">
         <img src="/FxLogo.png" alt="" />
 
         {/* Responsive Hamburger Menu */}
