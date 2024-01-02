@@ -44,7 +44,7 @@ const Header = () => {
         } bg-[#00000090]`}
       >
         <div className="flex flex-col items-center gap-4 max-lg:gap-10 ">
-          <Link to="/Stock">
+          <Link to="/">
             <p className="font-semibold text-white text-sm cursor-pointer max-lg:text-[1.2rem]">
               Home
             </p>
@@ -80,7 +80,14 @@ const Header = () => {
 
       {/* Navigation Links */}
       <div className={`lg:flex items-center gap-16 hidden`}>
-        <p className="font-semibold text-white text-sm cursor-pointer">Home</p>
+        <div>
+          <Link to="/">
+            <p className="font-semibold text-white text-sm cursor-pointer">
+              Home
+            </p>
+          </Link>
+        </div>
+
         <div className="cursor-pointer">
           <Link to="/Plan">
             <p className="font-semibold text-white text-sm">Plan</p>

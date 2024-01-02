@@ -50,7 +50,7 @@ function OptionFAQDropdown() {
     <div className=" mx-auto my-20  w-[50%] max-md:w-[70%] max-sm:w-[90%]">
       <button
         onClick={toggleDropdown1}
-        className={`flex justify-between w-[100%] mb-5 border  shadow-sm py-5 rounded-lg px-4  border-[#D4B716]  text-sm font-medium text-[white] focus:outline-none 
+        className={`flex justify-between w-[100%] mb-5 border  shadow-sm py-5 rounded-lg px-4  border-[#D4B71680]  text-sm font-medium text-[white] focus:outline-none 
         ${
           isOpen1 ? 'bg-[#D4B716] ' : 'bg-[#343A40]'
         }`}
@@ -91,7 +91,7 @@ function OptionFAQDropdown() {
 
       <button
         onClick={toggleDropdown2}
-        className={`flex justify-between w-[100%] border mb-5 rounded-lg shadow-sm py-5 px-4  border-[#D4B716]  text-sm font-medium text-[white] focus:outline-none "
+        className={`flex justify-between w-[100%] border mb-5 rounded-lg shadow-sm py-5 px-4  border-[#D4B71680]  text-sm font-medium text-[white] focus:outline-none "
         ${
           isOpen2 ? 'bg-[#D4B716] ' : 'bg-[#343A40]'
         }`}>
@@ -126,7 +126,7 @@ function OptionFAQDropdown() {
 
       <button
         onClick={toggleDropdown3}
-        className={`flex justify-between w-[100%] rounded-lg mb-5  border border-[#D4B716]  shadow-sm py-5 px-4 text-sm font-medium text-[white] focus:outline-none
+        className={`flex justify-between w-[100%] rounded-lg mb-5  border border-[#D4B71680]  shadow-sm py-5 px-4 text-sm font-medium text-[white] focus:outline-none
         ${
           isOpen3 ? 'bg-[#D4B716] ' : 'bg-[#343A40]'
         }`}
@@ -163,7 +163,7 @@ function OptionFAQDropdown() {
 
       <button
         onClick={toggleDropdown4}
-        className={`flex justify-between w-[100%] border rounded-lg px-4 py-5 mb-5 border-[#D4B716]  shadow-sm p-4 text-sm font-medium text-[white] focus:outline-none
+        className={`flex justify-between w-[100%] border rounded-lg px-4 py-5 mb-5 border-[#D4B71680]  shadow-sm p-4 text-sm font-medium text-[white] focus:outline-none
         ${
           isOpen4 ? 'bg-[#D4B716] ' : 'bg-[#343A40]'
         }`}
@@ -204,7 +204,7 @@ function OptionFAQDropdown() {
 
       <button
         onClick={toggleDropdown5}
-        className={`flex justify-between w-[100%]  rounded-lg border border-[#D4B716]  shadow-sm py-5 px-4 text-sm font-medium text-[white] focus:outline-none"
+        className={`flex justify-between w-[100%]  rounded-lg border border-[#D4B71680]  shadow-sm py-5 px-4 text-sm font-medium text-[white] focus:outline-none"
         ${
           isOpen5 ? 'bg-[#D4B716] ' : 'bg-[#343A40]'
         }`}>

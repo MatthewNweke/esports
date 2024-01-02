@@ -29,7 +29,7 @@ const AboutUs = () => {
         </div>
       </div>
 
-      <div className="text-[1rem] my-20 pl-5 lg:pl-10 xl:pl-20">
+      <div className="text-[1rem] my-20 pl-5 lg:pl-10 xl:pl-20 max-md:my-0">
         <div>
           <p className="mb-10 text-[1.4rem] font-bold max-sm:text-[1.2rem] max-sm:mb-5">Legal Information</p>
           Fxtradings is one of the most reliable diversified financial

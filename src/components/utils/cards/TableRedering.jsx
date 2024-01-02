@@ -14,7 +14,7 @@ const Table = (props) => {
       
         {selectedOption === 'deposit' ? (
           <>
-          <p>Latest Deposit</p>
+          <p className='px-3'>Latest Deposit</p>
             {/* <p>pejfpjfpjpfj</p> */}
             <TransactionTable
              
@@ -22,7 +22,7 @@ const Table = (props) => {
           </>
         ) : (
           <>
-          <p>Latest Withdrawal</p>
+          <p className='px-3'>Latest Withdrawal</p>
              <TransactionTable
              
              />
@@ -37,13 +37,13 @@ const Table = (props) => {
     <div>
       <div className="flex gap-4 justify-center mt-10 max-sm:flex-col items-center max-sm:gap-10">
         <button
-          className="text-[black] font-bold py-2 px-4 max-sm:text-[0.8rem] max-sm:w-[50%]"
+          className="text-[black] font-bold py-3 px-4 max-sm:text-[0.8rem] max-sm:w-[50%]"
           onClick={() => handleButtonClick('deposit')}
         >
           Latest Deposit
         </button>
         <button
-          className="text-[white] bg-[black] font-bold py-2 px-4 border-[1px] border-[#D4B716]  max-sm:text-[0.8rem] max-sm:w-[50%]"
+          className="text-[white] bg-[black] font-bold py-3 px-4 border-[1px] border-[#D4B71680]  max-sm:text-[0.8rem] max-sm:w-[50%]"
           onClick={() => handleButtonClick('withdrawal')}
         >
           Latest Withdrawal

@@ -5,7 +5,7 @@ import Contact from './pages/Contact';
 import LogIn from './pages/LogIn';
 import Plan from './pages/Plan';
 import PrivacyPolicy from './pages/PrivacyPolicy';
-import Stock from './pages/Stock';
+import Home from './pages/Home';
 import Terms from './pages/Terms';
 
 
@@ -15,7 +15,7 @@ function App() {
   return (
     <div>
       <Routes>
-        <Route path="/" element={<Stock />} />
+        <Route path="/" element={<Home />} />
         <Route path="/plan" element={<Plan />} />
         <Route path="/about" element={<About />} />
         <Route path="/contact" element={<Contact />} />

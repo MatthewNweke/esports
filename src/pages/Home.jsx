@@ -9,10 +9,10 @@ import MainLayout from '../components/MainLayout';
 import StockSteps from '../components/StockSteps';
 import StockCardsContainer from '../components/utils/StockCardsContainer';
 
-const Stock = () => {
+const Home = () => {
   return (
     <MainLayout>
-      <div className="bg-[#30022ECC] bg-opacity-10 relative w-full h-[90vh] ">
+      <div className="relative w-full h-[90vh] ">
         <img src={bg_fxtrad} alt="" className="w-full h-full object-cover" />
         <div className="absolute flex flex-col justify-center  gap-12 top-[5rem] bg-opacity-10 text-white pl-3 lg:pl-5 xl:pl-10 max-md:top-[4rem] max-sm:top-[3rem]">
           <div className="laviossa text-[2.6rem] font-bold w-[30rem] max-lg:text-[2.4rem] max-lg:w-[100%] max-md:text-[2rem]  max-sm:text-[1.5rem] max-sm:m-0">
@@ -138,7 +138,7 @@ const Stock = () => {
         </div>
         <form
           action=""
-          className="relative border-2 border-solid border-[#D0402980] shadow-md w-[60%] h-[20rem] my-0 mx-auto rounded-lg max-lg:w-[70%] max-md:w-[80%] max-sm:w-[90%]"
+          className="relative border-2 border-solid border-[#D4B71680] shadow-md w-[60%] h-[20rem] my-0 mx-auto rounded-lg max-lg:w-[70%] max-md:w-[80%] max-sm:w-[90%]"
         >
           <div className="absolute w-[100%] top-[50%] translate-y-[-50%]">
             <div className="flex gap-[5%] justify-center mb-10 max-sm:flex-col max-sm:items-center">
@@ -192,7 +192,7 @@ const Stock = () => {
               </span>
             </div>
           </div>
-          <p className="text-[#D4B716]  text-[1.5rem] font-semibold">
+          <p className="text-[#D4B716]  text-[1.5rem] font-semibold max-md:text-[1.2rem] max-sm:text-[1rem]">
             Create Account
           </p>
         </div>
@@ -205,7 +205,7 @@ const Stock = () => {
               </span>
             </div>
           </div>
-          <p className="text-[#D4B716]  text-[1.5rem] font-semibold">
+          <p className="text-[#D4B716]  text-[1.5rem] font-semibold max-md:text-[1.2rem] max-sm:text-[1rem]">
             Choose a plan
           </p>
         </div>
@@ -218,12 +218,12 @@ const Stock = () => {
               </span>
             </div>
           </div>
-          <p className="text-[#D4B716]  text-[1.5rem] font-semibold">Earn</p>
+          <p className="text-[#D4B716]  text-[1.5rem] font-semibold max-md:text-[1.2rem] max-sm:text-[1rem]">Earn</p>
         </div>
       </div>
 
       <div className="bg-black text-white pt-20 ">
-        <p className="text-center text-[1rem] px-4">
+        <p className="text-center text-[1.2rem] px-4">
           Here is the log of the most recent transactions including withdraw and
           deposit made by our <br /> users.
         </p>
@@ -262,4 +262,4 @@ const Stock = () => {
   );
 };
 
-export default Stock;
+export default Home;
