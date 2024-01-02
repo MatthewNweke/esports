@@ -1,6 +1,17 @@
 import plan_bg from '../../../assets/plan_bg.png';
+import Modal from './Modal';
+import { useState } from 'react';
 
 const StockStepsCard = ({ title, returns, daily, total, amount }) => {
+  const [isModalOpen, setModalOpen] = useState(false);
+
+  const openModal = () => {
+    setModalOpen(true);
+  };
+
+  const closeModal = () => {
+    setModalOpen(false);
+  };
   return (
     <div
       className="w-[18rem] shadow-md rounded-lg px-7 py-5 flex flex-col justify-between"
@@ -30,7 +41,8 @@ const StockStepsCard = ({ title, returns, daily, total, amount }) => {
         </p>
         <div className='mt-10 text-center flex flex-col gap-5 items-center'>
           <p className="font-medium  text-[#D4B716]  text-[1.5rem]">{amount}</p>
-          <button className="bg-[#D4B716]   py-2 rounded-[0.4rem] w-[50%]">Invest now</button>
+          <button className="bg-[#D4B716]   py-2 rounded-[0.4rem] w-[50%]" onClick={openModal}>Invest now</button>
+          <Modal isOpen={isModalOpen} onClose={closeModal} />
         </div>
       </div>
     </div>
