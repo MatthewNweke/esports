@@ -69,7 +69,7 @@ const About = () => {
 
         <div className='w-[100%]'>
           <div
-            className="h-[40vh] px-5 w-[100%] xl:w-[60%] lg:w-[80%] my-16 mx-auto flex flex-col items-center text-center gap-5 justify-center "
+            className="py-10 px-5 w-[100%] xl:w-[60%] lg:w-[80%] my-16 mx-auto flex flex-col items-center text-center gap-5 justify-center "
             style={{
               backgroundImage: 'url("/joinUs_bg.jpg") ',
               backgroundRepeat: 'no-repeat',
