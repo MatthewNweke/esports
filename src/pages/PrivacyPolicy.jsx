@@ -7,7 +7,7 @@ const PrivacyPolicy = () => {
       <MainLayout>
         <CoinBg title="Privacy & Policy" description="Privacy & Policy" />
 
-        <div className="px-16 py-10 bg-black text-white text-[1.2rem] leading-9">
+        <div className="px-16 py-10 bg-black text-white text-[1.2rem] leading-9 max-lg:px-8 max-md:px-5 max-sm:px-3 max-sm:text-[1rem]">
           Our company understands the importance of the personal information of
           every participant. Cooperating with our company, you can be sure of
           the privacy of your personal information and in its protection by our

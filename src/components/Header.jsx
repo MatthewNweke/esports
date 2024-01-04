@@ -1,15 +1,31 @@
 import { Link } from 'react-router-dom';
-import { useState } from 'react';
+import { useState,useEffect } from 'react';
 
 const Header = () => {
   const [isMenuOpen, setMenuOpen] = useState(false);
-
+  const [isScrolled, setScrolled] = useState(false);
+  
   const toggleMenu = () => {
     setMenuOpen(!isMenuOpen);
   };
+  const handleScroll = () => {
+    // Add your desired scroll threshold value
+    const scrollThreshold = 50;
+    setScrolled(window.scrollY > scrollThreshold);
+  };
+
+  useEffect(() => {
+    window.addEventListener('scroll', handleScroll);
+
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
+    };
+  }, []);
 
   return (
-    <div className="w-full flex bg-[#00000090] shadow-md fixed z-40 top-0 left-0 justify-around max-lg:block ">
+    <div className={`w-full flex shadow-md fixed z-40 top-0 left-0 justify-around max-lg:block transition-all duration-300 ${
+        isScrolled ? 'bg-[#00000080]' : 'bg-[black]'
+      }`}>
       <div className="flex justify-between items-center py-4 px-5 lg:px-10 xl:px-20">
         <img src="/FxLogo.png" alt="" />
 

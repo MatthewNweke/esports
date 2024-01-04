@@ -7,7 +7,7 @@ const Terms = () => {
       <MainLayout>
         <CoinBg title="Terms & Condition" description="Terms & Condition" />
 
-        <div className="px-16 py-10 bg-black text-white text-[1.2rem] leading-9">
+        <div className="px-16 py-10 bg-black text-white text-[1.2rem] leading-9 max-lg:px-8 max-md:px-5 max-sm:px-3 max-sm:text-[1rem]">
           <p className="text-[1.4rem] font-semibold ">Terms of use</p>
           As per this agreement, the rules and terms of usage (hereinafter known
           as Term of Use) are defined related to the services and features of
