@@ -19,15 +19,22 @@ const Side = ({ onItemSelected }) => {
     'My Referral',
     'Notifications',
     'Contact Support',
-    'Logout'
+    'Logout',
   ];
 
   return (
-    <aside className="bg-slate-800 text-white h-[100vh] overflow-y-auto">
+    <aside
+      className="text-white font-semibold bg-gradient-to-br from-gray-800 to-gray-900 overflow-y-auto
+      inset-x-0 mx-auto min-h-[100vh] my-4 ml-4 w-72 rounded-xl transition-transform duration-300 xl:translate-x-0 border border-blue-gray-100"
+    >
       <nav>
-        <ul className='py-10 px-3 flex flex-col justify-center gap-8'>
+        <ul className="p-10 w-[100%] flex flex-col justify-center  gap-8">
           {sidebarItems.map((item, index) => (
-            <li className='cursor-pointer px-4 py-2 hover:bg-white hover:text-black' key={index} onClick={() => onItemSelected(item)}>
+            <li
+              className="font-normal text-white transition-colors hover:text-gray-900  cursor-pointer px-4 py-2 hover:bg-white"
+              key={index}
+              onClick={() => onItemSelected(item)}
+            >
               {item}
             </li>
           ))}
