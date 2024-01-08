@@ -6,8 +6,8 @@ import Plan from './pages/Plan';
 import PrivacyPolicy from './pages/PrivacyPolicy';
 import Home from './pages/Home';
 import Terms from './pages/Terms';
-import Dashboard from './components/dashboard/dashboard';
-import Deposits from './components/dashboard/Deposits';
+import Dashboard from './dashboard/Dashboard'
+
 import { useEffect } from 'react';
 import { Routes, Route, useLocation } from 'react-router-dom';
 // import { Dashboard, Auth } from './components/dashboard/layouts';
@@ -32,7 +32,7 @@ function App() {
         <Route path="/privacy-policy" element={<PrivacyPolicy />} />
         <Route path="/terms&condition" element={<Terms />} />
         <Route path="/dashboard" element={<Dashboard />} /> 
-        <Route path="/Deposits" element={<Deposits />} /> 
+        {/* <Route path="/Deposits" element={<Deposits />} />  */}
 
        
       </Routes>
