@@ -2,7 +2,7 @@
 
 import { useState } from 'react';
 
-import Side from '../dashboard/Side';
+import Sides from '../dashboard/Sides';
 import Header from'../dashboard/Header';
 import MainContent from'../dashboard/MainContent';
 const Dashboard = () => {
@@ -14,7 +14,7 @@ const Dashboard = () => {
 
   return (
     <div className="flex overflow-hidden">
-      <Side onItemSelected={handleItemSelected} />
+      <Sides onItemSelected={handleItemSelected} />
       <div className="flex-1 flex flex-col">
         <Header />
         <MainContent selectedItem={selectedItem} />

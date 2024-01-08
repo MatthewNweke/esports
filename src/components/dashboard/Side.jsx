@@ -1,47 +1,22 @@
-// src/components/Sidebar.js
+import items from "../../data/sidebar.json";
 
-import React, { useState } from 'react';
+import SidebarItem from '../../components/dashboard/SidebarItem';
 
-const Side = ({ onItemSelected }) => {
-  const sidebarItems = [
-    'Dashboard',
-    'Deposit',
-    'Withdraw',
-    'Transfer',
-    'Mywallet',
-    'Pricing plans',
-    'Bonus',
-    'All Transactions',
-    'Deposit History',
-    'Withdrawal History',
-    'Transfer History',
-    'My Profile',
-    'My Referral',
-    'Notifications',
-    'Contact Support',
-    'Logout',
-  ];
+export default function Sidebar({ title }) {
 
+  const isActive = (path) => {
+    return window.location.pathname === path;
+  };
   return (
-    <aside
-      className="text-white font-semibold bg-gradient-to-br from-gray-800 to-gray-900 overflow-y-auto
-      inset-x-0 mx-auto min-h-[100vh] my-4 ml-4 w-72 rounded-xl transition-transform duration-300 xl:translate-x-0 border border-blue-gray-100"
-    >
-      <nav>
-        <ul className="p-10 w-[100%] flex flex-col justify-center  gap-8">
-          {sidebarItems.map((item, index) => (
-            <li
-              className="font-normal text-white transition-colors hover:text-gray-900  cursor-pointer px-4 py-2 hover:bg-white"
-              key={index}
-              onClick={() => onItemSelected(item)}
-            >
-              {item}
-            </li>
-          ))}
-        </ul>
-      </nav>
-    </aside>
-  );
-};
+    <div className=" bg-gradient-to-br from-gray-800 to-gray-900 min-h-screen justify-items-end items-center  font-black">
+      <div className=" ml-auto flex flex-col gap-8 h-2/5  w-full">
+        <h2 className='text-[#fff] m-3 break-words'> {title} </h2>
+        <div className="flex flex-col space-y-2">
 
-export default Side;
+          {items.map((item, index) => <SidebarItem key={index} item={item} active={isActive(item.path)} />)}
+        </div>
+        <p className="text-white">lorem</p>
+      </div>
+    </div>
+  );
+}

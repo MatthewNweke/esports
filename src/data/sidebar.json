@@ -1,0 +1,18 @@
+[
+  {
+    "title": "Dashboard",
+    "icon": "/dashboard.svg",
+    "path": "/dashboard"
+  },
+
+  {
+    "title": "Deposit",
+    "icon": "/calendar.svg",
+    "path": "/Deposits"
+  },
+  {
+    "title": "Clients",
+    "icon": "/user-square.svg",
+    "path": ""
+  }
+]
