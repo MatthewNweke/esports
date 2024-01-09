@@ -10,17 +10,10 @@ import ChooseCard from '../components/utils/ChooseCard';
 import StockCardsContainer from '../components/utils/StockCardsContainer';
 import TableRendering from '../components/utils/cards/TableRedering';
 
-const KEY = '7177b9c0';
+
 
 const Home = () => {
-  const [movies, setMovies] = useState([]);
-
-  useEffect(function () {
-    fetch(`http://www.omdbapi.com/?apikey=${KEY}&s=interstella`)
-      .then((res) => res.json())
-      .then((data) => setMovies(data.Search));
-  }, []);
-
+  
   return (
     <MainLayout>
       <div className="relative w-full h-[90vh] ">
