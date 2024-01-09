@@ -1,10 +1,10 @@
+import { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
-import { useState,useEffect } from 'react';
 
 const Header = () => {
   const [isMenuOpen, setMenuOpen] = useState(false);
   const [isScrolled, setScrolled] = useState(false);
-  
+
   const toggleMenu = () => {
     setMenuOpen(!isMenuOpen);
   };
@@ -23,11 +23,10 @@ const Header = () => {
   }, []);
 
   return (
-    <div className={`w-full flex shadow-md fixed z-40 top-0 left-0 justify-around max-lg:block transition-all duration-300 ${
-        isScrolled ? 'bg-[#00000080]' : 'bg-[black]'
+    <div className={`w-full flex shadow-md fixed z-40 top-0 left-0 justify-around max-lg:block transition-all duration-300 ${isScrolled ? 'bg-[#57bbb980]' : 'bg-green-500'
       }`}>
       <div className="flex justify-between items-center py-4  px-5 lg:px-10 xl:px-20">
-        <img src="/FxLogo.png" alt="" />
+        <img src="/FxLogo.png" className='' width={200} height={50} alt="" />
 
         {/* Responsive Hamburger Menu */}
         <div className="lg:hidden">
@@ -55,9 +54,8 @@ const Header = () => {
 
       {/* Dropdown Menu */}
       <div
-        className={`lg:hidden transition-all duration-300 overflow-hidden ${
-          isMenuOpen ? 'max-h-96 py-10' : 'max-h-0'
-        } bg-[#00000090]`}
+        className={`lg:hidden transition-all duration-300 overflow-hidden ${isMenuOpen ? 'max-h-96 py-10' : 'max-h-0'
+          } bg-[#57bbb990]`}
       >
         <div className="flex flex-col items-center gap-4 max-lg:gap-10 ">
           <Link to="/">

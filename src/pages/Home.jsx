@@ -1,14 +1,14 @@
+import { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
+import bg_fxtrad from '../assets/6262908.jpg';
+import MainLayout from '../components/MainLayout';
 import OptionFAQDropdown from '../components/OptionFAQDropdown';
+import StockSteps from '../components/StockSteps';
 import StockSwiper from '../components/StockSwiper';
 import AboutUs from '../components/common/AboutUs';
 import ChooseCard from '../components/utils/ChooseCard';
-import TableRendering from '../components/utils/cards/TableRedering';
-import bg_fxtrad from '../assets/bg_fxtrad.jpg';
-import MainLayout from '../components/MainLayout';
-import StockSteps from '../components/StockSteps';
 import StockCardsContainer from '../components/utils/StockCardsContainer';
-import { useState, useEffect } from 'react';
+import TableRendering from '../components/utils/cards/TableRedering';
 
 const KEY = '7177b9c0';
 
@@ -24,11 +24,11 @@ const Home = () => {
   return (
     <MainLayout>
       <div className="relative w-full h-[90vh] ">
-        <img src={bg_fxtrad} alt="" className="w-full h-full object-cover" />
+        <img src={bg_fxtrad} alt="" className="w-full h-full object-cover brightness-50" />
         <div className="absolute flex flex-col justify-center  gap-12 top-[5rem] bg-opacity-10 text-white pl-3 lg:pl-5 xl:pl-10 max-md:top-[4rem] max-sm:top-[3rem]">
           <div className="laviossa text-[2.6rem] font-bold w-[30rem] max-lg:text-[2.4rem] max-lg:w-[100%] max-md:text-[2rem]  max-sm:text-[1.5rem] max-sm:m-0">
             Invest for Future in a Stable Platform <br />
-            <p className="text-[#D4B716] ">
+            <p className="text-green-300 ">
               Rely on us for a <br /> better future
             </p>
           </div>
@@ -44,7 +44,7 @@ const Home = () => {
             security of your investment.
           </ul>
           <Link to="/LogIn">
-            <button className="text-[black] font-bold py-3 px-5 bg-[#D4B716]  rounded-lg">
+            <button className="text-white font-bold py-3 px-5 bg-green-500  rounded-lg">
               Start learning
             </button>
           </Link>
@@ -56,7 +56,7 @@ const Home = () => {
       {/* <StockSwiper /> */}
       <div className="px-5 lg:px-10 xl:px-20 py-[3rem] my-[3rem] bg-gray-100">
         <p className="text-[2rem] font-bold tracking-wide text-[#1A2433] text-center max-sm:text-[1.5rem]">
-          Available <span className="text-[#D4B716] ">Plans</span>
+          Available <span className="text-green-500 ">Plans</span>
         </p>
         <p className="text-center mt-5">
           To make a solid investment, you have to know where you are investing.
@@ -69,7 +69,7 @@ const Home = () => {
         <div className="text-center max-sm:px-5">
           <p className="text-[2rem] max-sm:text-[1.5rem]">
             Why Choose <br />{' '}
-            <span className="text-[#D4B716]  ">FxtradingsLimited</span>{' '}
+            <span className="text-green-500  ">FxtradingsLimited</span>{' '}
           </p>
           <p className="text-[1rem]">
             Our goal is to provide our investors with a reliable source of high
@@ -135,7 +135,7 @@ const Home = () => {
           />
         </div>
       </div>
-      <div className="py-10">
+      {/* <div className="py-10">
         <div className="text-center px-5">
           <p className="text-[2rem] font-semibold max-sm:text-[1.5rem]">
             Profit <span className="text-[#D4B716]  ">Calculator</span>
@@ -191,9 +191,9 @@ const Home = () => {
             </div>
           </div>
         </form>
-      </div>
+      </div> */}
 
-      <div className="flex flex-wrap justify-around items-center bg-gradient-to-br from-black py-20 to-opacity-50 text-[#D4B716]  max-sm:flex-col max-sm:justify-center max-sm:gap-20">
+      {/* <div className="flex flex-wrap justify-around items-center bg-white py-20 to-opacity-50 text-green-500  max-sm:flex-col max-sm:justify-center max-sm:gap-20">
         <div className="flex flex-col gap-3 items-center justify-center">
           <div className="border-[3px] relative border-solid border[#D4B716]  shadow-md border-opacity-100 w-[7rem] h-[7rem] rounded-[50%] bg-[black]">
             <div className="absolute right-0 border-[3px] border-solid border[#D4B716]   shadow-md rounded-[50%] h-[2rem] w-[2rem] bg-[black]">
@@ -232,9 +232,9 @@ const Home = () => {
             Earn
           </p>
         </div>
-      </div>
+      </div> */}
 
-      <div className="bg-black text-white pt-20 ">
+      <div className="bg-white text-black pt-20 ">
         <p className="text-center text-[1.2rem] px-4">
           Here is the log of the most recent transactions including withdraw and
           deposit made by our <br /> users.
@@ -247,7 +247,7 @@ const Home = () => {
 
       <div className="text-center mt-20">
         <p className="text-[2rem] font-semibold max-sm:text-[1.5rem]">
-          Our Expert<span className="text-[#D4B716] ">Team Members</span>
+          Our Expert<span className="text-green-500 ">Team Members</span>
         </p>
         <p className="my-[1rem] text-[1rem] ">
           We have a great team including developers, designers, and Traders. The
@@ -256,12 +256,12 @@ const Home = () => {
       </div>
       <StockCardsContainer />
 
-      <div className="bg-[black] min-h-[50vh] py-10">
+      <div className="bg-gray-100 min-h-[50vh] py-10">
         <div className="text-center my-20 ">
-          <p className="text-[2rem] font-semibold text-white max-sm:text-[1.5rem]">
-            Frequently Asked <span className="text-[#D4B716] ">Questions</span>
+          <p className="text-[2rem] font-semibold text-gray-700 max-sm:text-[1.5rem]">
+            Frequently Asked <span className="text-green-500 ">Questions</span>
           </p>
-          <p className="my-[1rem] text-[1rem] text-white">
+          <p className="my-[1rem] text-[1rem] text-gray-800">
             We answer some of your Frequently Asked Questions regarding our
             platform. If you have a <br />
             query that is not answered here, Please contact us.

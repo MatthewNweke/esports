@@ -14,14 +14,14 @@ const Contact = () => {
           <div
             className=" h-[100vh] w-[50%] hidden xl:block"
             style={{
-              backgroundImage: 'url("/leftCoin_Bg.jpg") ',
+              backgroundImage: 'url("/team-stockbrokers-are.jpg") ',
               backgroundRepeat: 'no-repeat',
               backgroundSize: 'cover',
               backgroundPosition: 'center',
             }}
           ></div>
 
-          <div className=" bg-black py-5 w-[50%] text-[white] flex flex-col  justify-center gap-[1.5rem] items-center px-5 max-xl:mx-auto max-xl:my-0 max-xl:w-[80%] max-md:w-[90%] max-sm:w-[100%] max-sm:py-10">
+          <div className=" bg-gray-100 py-5 w-[50%] text-black flex flex-col  justify-center gap-[1.5rem] items-center px-5 max-xl:mx-auto max-xl:my-0 max-xl:w-[80%] max-md:w-[90%] max-sm:w-[100%] max-sm:py-10">
             <p className="text-[2.2rem] font-semibold">Contact Us</p>
             <p className="text-[1rem] text-center font-semibold">
               If you have any questions or queries that are not answered on our
@@ -39,7 +39,7 @@ const Contact = () => {
                     type="text"
                     name=""
                     id=""
-                    className="border-2 border-solid border-[#D4B71680] bg-black outline-none rounded-lg py-3 px-2 focus:border-[1px] focus:border-[#D4B716] "
+                    className="border-2 border-solid border-green-600 bg-white outline-none rounded-lg py-3 px-2 focus:border-[1px] focus:border-green-400 "
                   />
                 </div>
 
@@ -49,7 +49,7 @@ const Contact = () => {
                     type="email"
                     name=""
                     id=""
-                    className="border-2 border-solid border-[#D4B71680] bg-black outline-none rounded-lg py-3 px-2 focus:border-[1px] focus:border-[#D4B716] "
+                    className="border-2 border-solid border-green-600 bg-white outline-none rounded-lg py-3 px-2 focus:border-[1px] focus:border-green-400 "
                   />
                 </div>
               </div>
@@ -59,7 +59,7 @@ const Contact = () => {
                   type="text"
                   name=""
                   id=""
-                  className="border-2 border-solid border-[#D4B71680] bg-black outline-none rounded-lg py-3 px-2 focus:border-[1px] focus:border-[#D4B716] "
+                  className="border-2 border-solid border-green-600 bg-white outline-none rounded-lg py-3 px-2 focus:border-[1px] focus:border-green-400 "
                 />
               </div>
 
@@ -67,19 +67,19 @@ const Contact = () => {
                 type="text"
                 name=""
                 id=""
-                className="border-2 border-solid border-[#D4B71680] bg-black outline-none rounded-lg py-3 px-2 h-[10rem] w-[100%]"
+                className="border-2 border-solid border-green-600 bg-white outline-none rounded-lg py-3 px-2 h-[10rem] w-full focus:border-green-400"
               />
-              <button className="text-[black]  w-[25%] font-bold py-3  bg-[#D4B716]  rounded-lg max-sm:w-[40%]">
+              <button className="text-white  w-[25%] font-bold py-3  bg-green-500  rounded-lg max-sm:w-[40%]">
                 Send Message
               </button>
             </form>
           </div>
         </div>
 
-        <div className='flex justify-center gap-10 py-10 min-h-[70vh] bg-black items-center flex-wrap max-sm:mt-10'>
-          <AddressCard title={"Phone Number"} description={"+1 (331) 704-0512"}/>
-          <AddressCard title={"Email Address"} description={"admin@fxtradingslimited.com"}/>
-          <AddressCard title={"Office Address"} description={"3015 Suit pagla road, Singapore"}/>
+        <div className='flex justify-center gap-10 py-10 min-h-[70vh] bg-white items-center flex-wrap max-sm:mt-10'>
+          <AddressCard title={"Phone Number"} description={"+1 (331) 704-0512"} />
+          <AddressCard title={"Email Address"} description={"admin@fxtradingslimited.com"} />
+          <AddressCard title={"Office Address"} description={"3015 Suit pagla road, Singapore"} />
         </div>
       </MainLayout>
     </div>

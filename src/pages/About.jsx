@@ -10,7 +10,7 @@ const About = () => {
         {/* <CoinBg> */}
 
         <CoinBg title="About Us" description="About" />
-
+        {/* 
         <div className="bg-gradient-to-br from-black py-20 to-opacity-50 ">
           <div className="text-center mb-28">
             <p className="text-[2.5rem] font-bold text-white max-md:text-[2rem] max-sm:text-[1.5rem]">
@@ -61,9 +61,9 @@ const About = () => {
               <p className="text-[#D4B716]  text-[1.5rem] font-semibold">Earn</p>
             </div>
           </div>
-        </div>
+        </div> */}
         <AboutUs />
-        <div className="bg-black py-10">
+        <div className="bg-gray-100 py-10">
           <OptionFAQDropdown />
         </div>
 
@@ -75,7 +75,7 @@ const About = () => {
               backgroundRepeat: 'no-repeat',
               backgroundSize: 'cover',
               backgroundPosition: 'center',
-              boxShadow: '0 3px 15px rgba(208, 64, 41, 0.5)',
+              boxShadow: '0 3px 15px #31c48d',
               borderRadius: '0.8rem',
             }}
           >
@@ -89,7 +89,7 @@ const About = () => {
               investments, <br /> but we also guarantee the security of your
               investment.
             </p>
-            <button className="bg-[#D4B716]  px-8 py-3 rounded-lg">
+            <button className="bg-green-500 border-0 text-white font-semibold px-8 py-3 rounded-lg">
               Join Us
             </button>
           </div>

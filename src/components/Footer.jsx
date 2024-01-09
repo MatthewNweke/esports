@@ -1,15 +1,15 @@
-import data from '../data/footer.json';
 import { Link } from 'react-router-dom';
+import data from '../data/footer.json';
 
 export default function Footer() {
   console.log({ data });
   return (
     <section
-      className="w-full h-[50vh] mx-auto py-9 px-5 lg:px-10 xl:px-20"
+      className="w-full h-[30vh] md:h-[50vh] mx-auto py-9 px-5 lg:px-10 xl:px-20"
       style={{ backgroundImage: 'url("/bg_carpet.jpg")' }}
     >
       <div className="flex flex-col justify-center items-center gap-8">
-        <img src="/FxLogo.png" alt="" className="text-center " />
+        <img src="/FxLogo.png" alt="" className="text-center " width={300} height={100} />
         <div className="flex gap-5">
           <Link to="/privacy-policy">
             <button className="bg-[transparent] text-[white]">

@@ -11,22 +11,22 @@ const Table = (props) => {
   const renderTableRows = () => {
     return (
       <>
-      
+
         {selectedOption === 'deposit' ? (
           <>
-          <p className='px-3'>Latest Deposit</p>
+            <p className='px-3'>Latest Deposit</p>
             {/* <p>pejfpjfpjpfj</p> */}
             <TransactionTable
-             
+
             />
           </>
         ) : (
           <>
-          <p className='px-3'>Latest Withdrawal</p>
-             <TransactionTable
-             
-             />
-             
+            <p className='px-3'>Latest Withdrawal</p>
+            <TransactionTable
+
+            />
+
           </>
         )}
       </>
@@ -43,7 +43,7 @@ const Table = (props) => {
           Latest Deposit
         </button>
         <button
-          className="text-[white] bg-[black] font-bold py-3 px-4 border-[1px] border-[#D4B71680]  max-sm:text-[0.8rem] max-sm:w-[50%]"
+          className="text-[white] bg-[black] font-bold py-3 px-4 border-[1px] border-green-600  max-sm:text-[0.8rem] max-sm:w-[50%]"
           onClick={() => handleButtonClick('withdrawal')}
         >
           Latest Withdrawal
@@ -53,7 +53,7 @@ const Table = (props) => {
       <div className="rounded-lg w-[80%] my-10 mx-auto pb-20 max-lg:w-[90%]  max-md:w-[100%]">
         <table className="w-[100%] h-[20rem]  max-sm:w-[100%] ">
           <thead>
-            <tr className="bg-[#D4B716]  h-12 rounded-lg">
+            <tr className="bg-green-500  h-12 rounded-lg">
               {/* Add your table header cells here */}
             </tr>
           </thead>

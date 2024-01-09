@@ -1,5 +1,5 @@
 // import finance_vid from '../assets/finance-1.mp4';
-import finance_vid from '../../assets/finance-1.mp4'
+import finance_vid from '../../assets/finance-1.mp4';
 
 const AboutUs = () => {
   return (
@@ -17,7 +17,7 @@ const AboutUs = () => {
 
         <div>
           <p className="mb-10 text-center text-[2rem] font-bold max-sm:text-[1.5rem]">
-            About <span className="text-[#D4B716]  ">Us</span>
+            About <span className="text-green-5000  ">Us</span>
           </p>
           <p className="md:text-lg text-gray-700">
             {`We are an international financial company engaged in investment activities, which are related to trading
@@ -55,7 +55,7 @@ const AboutUs = () => {
           innovative approach to business development are some driving forces
           behind our success.
         </div>
-        <button className="text-[black]  py-3 px-5 bg-[#D4B716]  rounded-lg mt-5">
+        <button className="text-white  py-3 px-5 bg-green-500  rounded-lg mt-5">
           View document
         </button>
       </div>
