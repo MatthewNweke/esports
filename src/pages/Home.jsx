@@ -8,8 +8,19 @@ import bg_fxtrad from '../assets/bg_fxtrad.jpg';
 import MainLayout from '../components/MainLayout';
 import StockSteps from '../components/StockSteps';
 import StockCardsContainer from '../components/utils/StockCardsContainer';
+import { useState, useEffect } from 'react';
+
+const KEY = '7177b9c0';
 
 const Home = () => {
+  const [movies, setMovies] = useState([]);
+
+  useEffect(function () {
+    fetch(`http://www.omdbapi.com/?apikey=${KEY}&s=interstella`)
+      .then((res) => res.json())
+      .then((data) => setMovies(data.Search));
+  }, []);
+
   return (
     <MainLayout>
       <div className="relative w-full h-[90vh] ">
@@ -36,7 +47,6 @@ const Home = () => {
             <button className="text-[black] font-bold py-3 px-5 bg-[#D4B716]  rounded-lg">
               Start learning
             </button>
-        
           </Link>
         </div>
       </div>
@@ -218,7 +228,9 @@ const Home = () => {
               </span>
             </div>
           </div>
-          <p className="text-[#D4B716]  text-[1.5rem] font-semibold max-md:text-[1.2rem] max-sm:text-[1rem]">Earn</p>
+          <p className="text-[#D4B716]  text-[1.5rem] font-semibold max-md:text-[1.2rem] max-sm:text-[1rem]">
+            Earn
+          </p>
         </div>
       </div>
 

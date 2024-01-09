@@ -26,7 +26,7 @@ const Header = () => {
     <div className={`w-full flex shadow-md fixed z-40 top-0 left-0 justify-around max-lg:block transition-all duration-300 ${
         isScrolled ? 'bg-[#00000080]' : 'bg-[black]'
       }`}>
-      <div className="flex justify-between items-center py-4 px-5 lg:px-10 xl:px-20">
+      <div className="flex justify-between items-center py-4  px-5 lg:px-10 xl:px-20">
         <img src="/FxLogo.png" alt="" />
 
         {/* Responsive Hamburger Menu */}
@@ -36,7 +36,7 @@ const Header = () => {
             className="text-white focus:outline-none bg-[transparent]"
           >
             <svg
-              className="h-7 w-7"
+              className="h-6 w-6"
               fill="none"
               stroke="currentColor"
               viewBox="0 0 24 24"
