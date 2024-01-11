@@ -30,7 +30,7 @@ const StockStepsCard = ({ title, returns, daily, total, amount }) => {
         <p className="font-medium text-lg text-[#fff]  border-t-[1px] border-b-[1px] py-2 px-5 border-green-300">
           {returns}
         </p>
-        <p className="font-medium text-lg text-[#fff] border-t-[1px] border-b-[1px] py-2 px-5 border-green-303">
+        <p className="font-medium text-lg text-[#fff] border-t-[1px] border-b-[1px] py-2 px-5 border-green-300">
           Everyday
         </p>
         <p className="font-medium text-lg text-[#fff] border-t-[1px] border-b-[1px] py-2 px-5 border-green-300">

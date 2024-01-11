@@ -32,7 +32,6 @@ function App() {
         <Route path="/privacy-policy" element={<PrivacyPolicy />} />
         <Route path="/terms&condition" element={<Terms />} />
         <Route path="/dashboard" element={<Dashboard />} /> 
-        {/* <Route path="/Deposits" element={<Deposits />} />  */}
 
        
       </Routes>
