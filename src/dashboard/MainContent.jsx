@@ -37,7 +37,7 @@ const MainContent = ({ selectedItem }) => {
   return (
     
       
-      <main className=" overflow-hidden w-[75%] translate-x-[-90%] relative left-[90%] max-lg:w-[90%] max-md:w-[100%] max-md:px-1 max-lg:mt-10">
+      <main className=" px-3 overflow-hidden w-[75%] translate-x-[-50%] relative left-[50%] my-0 mx-auto max-lg:w-[100%] max-md:px-1 max-lg:mt-10">
       <Header/>
        
       {contentMap[selectedItem] || <p>Select an item from the sidebar.</p>}

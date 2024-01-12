@@ -23,7 +23,7 @@ const Sides = ({ onItemSelected }) => {
   ];
 
   return (
-    <div className={`fixed top-0  ${mobileMenu ? 'z-50' : 'z-50'}`}>
+    <div className={`fixed top-0 w-72 max-lg:w-56  ${mobileMenu ? 'z-50' : 'z-50'}`}>
       <div className={`bg-green-500 block z-50 max-lg:w-screen py-2 lg:hidden ${mobileMenu ? 'z-50' : ''}`}>
         <button
           onClick={() => setMobileMenu(!mobileMenu)}

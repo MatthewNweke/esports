@@ -2,8 +2,8 @@ import React from 'react'
 
 const PricingPlan = () => {
   return (
-    <div className="flex gap-[5%] flex-wrap justify-center items-center mt-10 max-lg:flex-col">
-        <div className="rounded shadow-xl min-h-[100vh] bg-white w-[30%] pb-10 max-lg:w-[70%] max-md:w-[100%]">
+    <div className="flex gap-[5%] flex-wrap justify-center items-center mt-10 max-xl:flex-col max-xl:gap-[10%]">
+        <div className="rounded shadow-xl min-h-[100vh] bg-white w-[30%] pb-10 max-xl:w-[60%] max-lg:w-[70%] max-md:w-[80%] max-sm:w-[100%]">
           <div class=" bg-green-500 p-5 rounded-xl before:w-full min-h-[40vh] ">
             <p className="text-[1.2rem] font-semibold text-white mb-3">
               Standard
@@ -68,7 +68,7 @@ const PricingPlan = () => {
             Make Deposit
           </button>
         </div>
-        <div className="rounded shadow-xl min-h-[100vh] bg-white w-[30%] pb-10 max-lg:w-[70%] max-md:w-[100%]">
+        <div className="rounded shadow-xl min-h-[100vh] bg-white w-[30%] pb-10 max-xl:w-[60%] max-lg:w-[70%] max-md:w-[80%] max-sm:w-[100%]">
           <div class=" bg-green-500 p-5 rounded-xl before:w-full min-h-[40vh] ">
             <p className="text-[1.2rem] font-semibold text-white mb-3">
               Legend
@@ -132,7 +132,7 @@ const PricingPlan = () => {
             </button>
           </div>
         </div>
-        <div className="rounded shadow-xl min-h-[100vh] bg-white w-[30%] pb-10 max-lg:w-[70%] max-md:w-[100%]">
+        <div className="rounded shadow-xl min-h-[100vh] bg-white w-[30%] pb-10 max-xl:w-[60%] max-lg:w-[70%] max-md:w-[80%] max-sm:w-[100%]">
           <div class=" bg-green-500 p-5 rounded-xl before:w-full min-h-[40vh] ">
             <p className="text-[1.2rem] font-semibold text-white mb-3">
               Standard
