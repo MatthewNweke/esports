@@ -23,11 +23,11 @@ const Sides = ({ onItemSelected }) => {
   ];
 
   return (
-    <div className="fixed top-0  h-screen z-50">
-      <div className='bg-green-500 block  max-lg:w-screen py-2 lg:hidden'>
+    <div className={`fixed top-0  ${mobileMenu ? 'z-50' : 'z-50'}`}>
+      <div className={`bg-green-500 block z-50 max-lg:w-screen py-2 lg:hidden ${mobileMenu ? 'z-50' : ''}`}>
         <button
           onClick={() => setMobileMenu(!mobileMenu)}
-          className="lg:hidden text-2xl block border z-50 rounded border-black p-3 relative left-3"
+          className="lg:hidden text-2xl block border rounded border-black p-3 relative left-3"
         >
           &#9776;
         </button>
@@ -36,8 +36,8 @@ const Sides = ({ onItemSelected }) => {
         className={`${
           mobileMenu
             ? 'translate-x-0 shadow-xl'
-            : '-translate-x-full max-lg:overflow-y-hidden shadow-none'
-        } font-semibold  text-black overflow-y-auto h-screen  fixed w-full my-4 ml-4 rounded-xl duration-300 transition-transform bg-white  lg:translate-x-0 lg:static `}
+            : '-translate-x-full max-lg:overflow-y-hidden shadow-none '
+        } font-semibold overflow-hidden text-black overflow-y-auto h-screen fixed w-full my-4 ml-4 rounded-xl duration-300 transition-transform bg-white  lg:translate-x-0 lg:static `}
       >
         <nav>
           <ul className="p-4 sm:p-10 w-full sm:w-72 flex flex-col justify-center gap-8">

@@ -23,10 +23,21 @@ const Dashboard = () => {
   };
 
   return (
+    <div>
+      <div className='bg-green-500 block max-lg:w-screen py-2 lg:hidden'>
+        <button
+          onClick={() => setMobileMenu(!mobileMenu)}
+          className="lg:hidden text-2xl block border rounded border-black p-3 relative left-3"
+        >
+          &#9776;
+        </button>
+      </div>
+    
     <div className="flex  overflow-hidden">
       <Sides onItemSelected={handleItemSelected} />
 
-      <MainContent selectedItem={selectedItem} />
+      <MainContent  selectedItem={selectedItem} />
+    </div>
     </div>
   );
 };
