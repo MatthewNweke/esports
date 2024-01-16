@@ -13,6 +13,7 @@ import WithdrawalHistory from './WithdrawalHistory';
 import AllTransfers from './AllTransfers';
 import Profile from './Profile';
 import Header from '../dashboard/Header';
+import MyReferral from './MyReferral';
 
 const MainContent = ({ selectedItem }) => {
   const contentMap = {
@@ -28,7 +29,7 @@ const MainContent = ({ selectedItem }) => {
     'Withdrawal History': <WithdrawalHistory />,
     'Transfer History': <AllTransfers />,
     'My Profile': <Profile />,
-    'My Referral': <p>Adjust your settings here.</p>,
+    'My Referral': <MyReferral/>,
     Notifications: <p>Adjust your settings here.</p>,
     'Contact Support': <p>Adjust your settings here.</p>,
     Logout: <p>Adjust your settings here.</p>,

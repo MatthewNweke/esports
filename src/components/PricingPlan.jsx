@@ -1,6 +1,7 @@
 import React from 'react'
 
 const PricingPlan = () => {
+
   return (
     <div className="flex gap-[5%] flex-wrap justify-center items-center mt-10 max-xl:flex-col max-xl:gap-[10%]">
         <div className="rounded shadow-xl min-h-[100vh] bg-white w-[30%] pb-10 max-xl:w-[60%] max-lg:w-[70%] max-md:w-[80%] max-sm:w-[100%]">
@@ -53,7 +54,7 @@ const PricingPlan = () => {
               </div>
               <div className=" border-black border-[1px] p-5 rounded-lg cursor-pointer">
                 <img src="/xrp.png" alt="" className="w-25 h-20" />
-              </div>
+              </div> 
             </div>
             <div className="flex justify-between p-5 gap-10">
               <div className=" border-black border-[1px] p-5 rounded-lg cursor-pointer">

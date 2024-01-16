@@ -1,12 +1,14 @@
 import './App.css';
 import About from './pages/About';
 import Contact from './pages/Contact';
-import LogIn from './pages/LogIn';
+import LogIn from './pages/Register';
 import Plan from './pages/Plan';
 import PrivacyPolicy from './pages/PrivacyPolicy';
 import Home from './pages/Home';
 import Terms from './pages/Terms';
-import Dashboard from './dashboard/Dashboard'
+import Dashboard from './dashboard/Dashboard';
+import SignIn from './dashboard/SignIn';
+
 
 import { useEffect } from 'react';
 import { Routes, Route, useLocation } from 'react-router-dom';
@@ -32,6 +34,7 @@ function App() {
         <Route path="/privacy-policy" element={<PrivacyPolicy />} />
         <Route path="/terms&condition" element={<Terms />} />
         <Route path="/dashboard" element={<Dashboard />} /> 
+        <Route path="/signin" element={<SignIn />} /> 
 
        
       </Routes>
