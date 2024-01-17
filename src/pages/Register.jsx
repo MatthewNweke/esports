@@ -48,7 +48,7 @@ const Register = () => {
   const handleSignUp = async (e) => {
     e.preventDefault();
     setError(null);
-    setSuccessMessage('');
+    setSuccessMessage('');  
     setLoading(true);
 
     try {

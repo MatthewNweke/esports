@@ -15,24 +15,28 @@ const SignIn = () => {
     }));
   };
 
-  const handleSubmit = async(e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
     const user = {
       username,
       password,
-      
-    }
+    };
     console.log('Submitted:', formData);
     // Here you can add logic to send the data to the server for authentication
   };
 
   return (
     <div className="mx-auto mt-40 fixed inset-0">
-      <h2 className="text-[2rem] font-semibold mb-4 text-center text-green-600 ">SignIn</h2>
+      <h2 className="text-[2rem] font-semibold mb-4 text-center text-green-600 ">
+        SignIn
+      </h2>
       <form onSubmit={handleSubmit} className="max-w-md mx-auto relative">
         <div className="mb-4">
-          <label htmlFor="email" className="block text-sm font-medium text-gray-600">
-           Email
+          <label
+            htmlFor="email"
+            className="block text-sm font-medium text-gray-600"
+          >
+            Email
           </label>
           <input
             type="email"
@@ -45,7 +49,10 @@ const SignIn = () => {
           />
         </div>
         <div className="mb-4">
-          <label htmlFor="password" className="block text-sm font-medium text-gray-600">
+          <label
+            htmlFor="password"
+            className="block text-sm font-medium text-gray-600"
+          >
             Password
           </label>
           <input
@@ -58,12 +65,15 @@ const SignIn = () => {
             required
           />
         </div>
-        <button
-          type="submit"
-          className="bg-green-500 absolute left-1/2 translate-x-[-50%] text-white px-4 py-2 rounded-md hover:bg-green-600"
-        >
-          SignIn
-        </button>
+
+        <Link to="/dashboard">
+          <button
+            type="submit"
+            className="bg-green-500 absolute left-1/2 translate-x-[-50%] text-white px-4 py-2 rounded-md hover:bg-green-600"
+          >
+            SignIn
+          </button>
+        </Link>
       </form>
     </div>
   );
