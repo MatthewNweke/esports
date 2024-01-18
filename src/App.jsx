@@ -8,6 +8,7 @@ import Home from './pages/Home';
 import Terms from './pages/Terms';
 import Dashboard from './dashboard/Dashboard';
 import SignIn from './dashboard/SignIn';
+import MyReferral from './dashboard/MyReferral';
 
 
 import { useEffect } from 'react';
@@ -35,8 +36,7 @@ function App() {
         <Route path="/terms&condition" element={<Terms />} />
         <Route path="/dashboard" element={<Dashboard />} /> 
         <Route path="/signin" element={<SignIn />} /> 
-
-       
+        <Route path="/referral" element={<MyReferral />} />  
       </Routes>
     </div>
   );
