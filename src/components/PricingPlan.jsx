@@ -1,4 +1,5 @@
-import {React,useState} from 'react';
+import { React, useState } from 'react';
+import { Link } from 'react-router-dom';
 
 const PricingPlan = () => {
   const [enteredAmount, setEnteredAmount] = useState('');
@@ -129,9 +130,14 @@ const PricingPlan = () => {
             </div>
           </div>
         </div>
-        <button className="bg-gradient-to-br text-white relative left-[50%] -translate-x-1/2 from-gray-800 to-gray-900 w-[90%] rounded-lg py-3 px-10" onClick={handleDepositClick}>
-          Make Deposit
-        </button>
+        <Link to="/payment">
+          <button
+            className="bg-gradient-to-br text-white relative left-[50%] -translate-x-1/2 from-gray-800 to-gray-900 w-[90%] rounded-lg py-3 px-10"
+            onClick={handleDepositClick}
+          >
+            Make Deposit
+          </button>
+        </Link>
       </div>
       <div className="rounded shadow-xl min-h-[100vh] bg-white w-[30%] pb-10 max-xl:w-[60%] max-lg:w-[70%] max-md:w-[80%] max-sm:w-[100%]">
         <div class=" bg-green-500 p-5 rounded-xl before:w-full min-h-[40vh] ">
@@ -235,9 +241,14 @@ const PricingPlan = () => {
               <img src="/bal.png" alt="" className="w-25 h-20" />
             </div>
           </div>
-          <button className="bg-gradient-to-br text-white relative left-[50%] -translate-x-1/2 from-gray-800 to-gray-900 w-[90%] rounded-lg py-3 px-10" onClick={handleDepositClick}>
-            Make Deposit
-          </button>
+          <Link to="/payment">
+            <button
+              className="bg-gradient-to-br text-white relative left-[50%] -translate-x-1/2 from-gray-800 to-gray-900 w-[90%] rounded-lg py-3 px-10"
+              onClick={handleDepositClick}
+            >
+              Make Deposit
+            </button>
+          </Link>
         </div>
       </div>
       <div className="rounded shadow-xl min-h-[100vh] bg-white w-[30%] pb-10 max-xl:w-[60%] max-lg:w-[70%] max-md:w-[80%] max-sm:w-[100%]">
@@ -328,7 +339,7 @@ const PricingPlan = () => {
           </div>
           <div className="flex justify-between p-5 gap-10">
             <div className=" border-black border-[1px] p-5 rounded-lg cursor-pointer relative">
-            <input
+              <input
                 type="checkbox"
                 name=""
                 id=""
@@ -337,7 +348,7 @@ const PricingPlan = () => {
               <img src="/usdt.png" alt="" className="w-25 h-20" />
             </div>
             <div className=" border-black border-[1px] p-5 rounded-lg cursor-pointer relative">
-            <input
+              <input
                 type="checkbox"
                 name=""
                 id=""
@@ -346,9 +357,14 @@ const PricingPlan = () => {
               <img src="/bal.png" alt="" className="w-25 h-20" />
             </div>
           </div>
-          <button className="bg-gradient-to-br text-white relative left-[50%] -translate-x-1/2 from-gray-800 to-gray-900 w-[90%] rounded-lg py-3 px-10" onClick={handleDepositClick}>
-            Make Deposit
-          </button>
+          <Link to="/payment">
+            <button
+              className="bg-gradient-to-br text-white relative left-[50%] -translate-x-1/2 from-gray-800 to-gray-900 w-[90%] rounded-lg py-3 px-10"
+              onClick={handleDepositClick}
+            >
+              Make Deposit
+            </button>
+          </Link>
         </div>
       </div>
     </div>
