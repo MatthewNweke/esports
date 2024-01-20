@@ -19,10 +19,7 @@ const FirstPage = () => {
       });
   };
 
-  const [checkBox,setCheckBox] =useState(true);
-  const hanleCheckedBox = function(){
-
-  }
+  
 
   return (
     <div className=' py-10 px-5'>
