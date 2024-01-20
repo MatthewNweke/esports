@@ -42,7 +42,7 @@ const Register = () => {
     // Fetching users from the API (if needed)
     axios
       .get(`${API_URL}/auth/create/`)
-      .then((response) => console.log(response.data))
+      .then((response) => console.log(response))
       .catch((error) => console.error('Error fetching users:', error));
   }, []);
 
