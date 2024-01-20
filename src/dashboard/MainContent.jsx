@@ -13,10 +13,15 @@ import WithdrawalHistory from './WithdrawalHistory';
 import AllTransfers from './AllTransfers';
 import Profile from './Profile';
 import Header from '../dashboard/Header';
+import MyReferral from './MyReferral';
+import Notification from './Notification';
+import Contact from './Contact';
+import FirstPage from './FirstPage';
+
 
 const MainContent = ({ selectedItem }) => {
   const contentMap = {
-    Dashboard: <p>Welcome to the Dashboard!</p>,
+    Dashboard: <FirstPage/>,
     Deposit: <Deposits />,
     Withdraw: <Withdrawal />,
     Transfer: <Transfer />,
@@ -28,22 +33,19 @@ const MainContent = ({ selectedItem }) => {
     'Withdrawal History': <WithdrawalHistory />,
     'Transfer History': <AllTransfers />,
     'My Profile': <Profile />,
-    'My Referral': <p>Adjust your settings here.</p>,
-    Notifications: <p>Adjust your settings here.</p>,
-    'Contact Support': <p>Adjust your settings here.</p>,
-    Logout: <p>Adjust your settings here.</p>,
+    'My Referral': <MyReferral />,
+    Notifications: <Notification />,
+    'Contact Support': <Contact/>,
+    Logout: "",
+    "ooo":<p className='hidden'>iiii</p>
   };
 
   return (
-    
-      
-      <main className=" px-3 overflow-hidden w-[75%] translate-x-[-50%] relative left-[50%] my-0 mx-auto max-lg:w-[100%] max-md:px-1 max-lg:mt-10">
-      <Header/>
-       
-      {contentMap[selectedItem] || <p>Select an item from the sidebar.</p>}
-      
+    <main className=" px-3 overflow-hidden w-[75%] translate-x-[-50%] relative left-[50%] my-0 mx-auto max-lg:w-[100%] max-md:px-1 max-lg:mt-10">
+      <Header />
+
+      {contentMap[selectedItem] || <FirstPage/>}
     </main>
-   
   );
 };
 

@@ -5,8 +5,9 @@ import PricingPlan from '../components/PricingPlan';
 const Deposits = () => {
   return (
     <div className=" ">
-      <div className="text-white bg-gradient-to-br  bg-green-500 rounded h-[8rem] my-0 mx-auto ">
-        <p className="px-3 py-5 font-semibold text-[1.2rem] text-white max-2xl:text-center max-xl:py-10">
+      
+      <div className="text-white bg-gradient-to-br rounded h-[8rem] my-0 mx-auto ">
+        <p className="px-3 py-5 font-semibold text-[1.2rem] text-black shadow-xl text-center max-xl:py-10">
           Deposit
         </p>
       </div>

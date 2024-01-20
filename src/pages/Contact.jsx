@@ -2,6 +2,7 @@ import CoinBg from '../components/common/CoinBg';
 import MainLayout from '../components/MainLayout';
 import AddressCard from '../components/utils/cards/AddressCard';
 
+
 const Contact = () => {
   return (
     <div className='bg-black'>
@@ -23,7 +24,7 @@ const Contact = () => {
 
           <div className=" bg-gray-100 py-5 w-[50%] text-black flex flex-col  justify-center gap-[1.5rem] items-center px-5 max-xl:mx-auto max-xl:my-0 max-xl:w-[80%] max-md:w-[90%] max-sm:w-[100%] max-sm:py-10">
             <p className="text-[2.2rem] font-semibold">Contact Us</p>
-            <p className="text-[1rem] text-center font-semibold">
+            <p className="text-[1rem] text-center">
               If you have any questions or queries that are not answered on our
               website, please feel free to contact us. We will try to respond to
               you as soon as possible. Thank you so much.

@@ -2,9 +2,9 @@ import PricingPlan from '../components/PricingPlan';
 
 const AllTransfers = () => {
   return (
-    <div>
-      <div className="text-white bg-gradient-to-br from-gray-800 to-gray-900 rounded h-[8rem] w-[100%] m-0">
-        <p className="px-3 py-5 font-semibold text-[1.2rem] text-white">
+    <div className=''>
+      <div className=" rounded h-[8rem] pt-10 w-[100%] m-0 text-center">
+        <p className="px-3 py-5 font-semibold text-[1.2rem]">
           History
         </p>
       </div>

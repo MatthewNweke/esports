@@ -2,6 +2,7 @@ import AboutUs from '../components/common/AboutUs';
 import CoinBg from '../components/common/CoinBg';
 import MainLayout from '../components/MainLayout';
 import OptionFAQDropdown from '../components/OptionFAQDropdown';
+import { Link } from 'react-router-dom';
 
 const About = () => {
   return (
@@ -67,7 +68,7 @@ const About = () => {
           <OptionFAQDropdown />
         </div>
 
-        <div className='w-[100%]'>
+        <div className="w-[100%]">
           <div
             className="py-10 px-5 w-[100%] xl:w-[60%] lg:w-[80%] my-16 mx-auto flex flex-col items-center text-center gap-5 justify-center "
             style={{
@@ -89,9 +90,11 @@ const About = () => {
               investments, <br /> but we also guarantee the security of your
               investment.
             </p>
-            <button className="bg-green-500 border-0 text-white font-semibold px-8 py-3 rounded-lg">
-              Join Us
-            </button>
+            <Link to="/signup">
+              <button className="bg-green-500 border-0 text-white font-semibold px-8 py-3 rounded-lg">
+                Join Us
+              </button>
+            </Link>
           </div>
         </div>
       </MainLayout>

@@ -5,7 +5,7 @@ const MainLayout = ({ children }) => {
   return (
     <main className="w-full overflow-hidden">
       <div className="mb-[5rem]">
-        <Header />
+      <Header />
       </div>
       {children}
       <Footer />

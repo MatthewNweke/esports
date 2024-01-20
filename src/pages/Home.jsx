@@ -36,7 +36,7 @@ const Home = () => {
             <br />
             security of your investment.
           </ul>
-          <Link to="/LogIn">
+          <Link to="/signup">
             <button className="text-white font-bold py-3 px-5 bg-green-500  rounded-lg">
               Start learning
             </button>
