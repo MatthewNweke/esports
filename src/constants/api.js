@@ -1,1 +1,1 @@
-export const API_URL ='https://vaultcoin-production.up.railway.app/user'
+export const API_URL ='https://vaultcoin-production.up.railway.app'
