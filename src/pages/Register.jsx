@@ -85,10 +85,7 @@ const Register = () => {
           },
         }
       );
-
-      // Handle the response data (e.g., display success message)
       console.log('API Response:', response.data);
-      // Reset the form after successful submission
       setFormData({
         email: '',
         password: '',
@@ -222,6 +219,12 @@ const Register = () => {
                   className="border-2 border-solid border-green-300 focus:border-green-500  bg-[transparent]  outline-none rounded-lg px-2 py-3 w-[100%]"
                 />
               </div>
+
+              <p className='text-green-500 py-8'>
+                {
+                  'Password must be at least 8 characters long and include at least one uppercase letter, one lowercase letter, one digit, and one special character.'
+                }
+              </p>
               <div className="flex flex-col gap-4 mb-5 relative w-[100%]">
                 <label htmlFor="password">Password</label>
                 <input
@@ -230,7 +233,7 @@ const Register = () => {
                   value={formData.password}
                   onChange={handleInputChange}
                   required
-                  className="border-2 border-solid border-green-300 focus:border-green-500  bg-[transparent]  outline-none rounded-lg px-2 py-3 w-[100%]"
+                  className="border-2 border-solid bg-[white] text-black border-green-300 focus:border-green-500  bg-[transparent]  outline-none rounded-lg px-2 py-3 w-[100%]"
                 />
                 <button
                   type="button"
@@ -248,7 +251,7 @@ const Register = () => {
                   value={formData.confirmPassword}
                   required
                   name="confirmPassword"
-                  className="border-2 border-solid border-green-300 focus:border-green-500 bg-[transparent]  outline-none rounded-lg px-2 py-3 w-[100%]"
+                  className="border-2 border-solid bg-[white] text-black border-green-300 focus:border-green-500  bg-[transparent]  outline-none rounded-lg px-2 py-3 w-[100%]"
                 />
 
                 <button
@@ -298,9 +301,9 @@ const Register = () => {
                 <button
                   type="submit"
                   disabled={isLoading}
-                  className="bg-white text-green-500 px-3 py-2 text-center relative left-1/2 my-10 -translate-x-[50%]"
+                  className="bg-white rounded text-green-500 px-3 py-2 text-center relative my-10 mx-5 hover:bg-green-500 hover:text-white ransition-all duration-300"
                 >
-                  {isLoading ? 'Creating...' : 'Create User'}
+                  {isLoading ? 'Creating...' : 'Sign Up'}
                 </button>
                 {error && (
                   <p style={{ color: 'red' }} className="p-2">

@@ -13,7 +13,8 @@ import Payment from './dashboard/Payment';
 
 
 import { useEffect } from 'react';
-import { Routes, Route, useLocation } from 'react-router-dom';
+// import { Routes, Route, useLocation } from 'react';
+import{Routes, Route, useLocation} from 'react-router-dom'
 // import { Dashboard, Auth } from './components/dashboard/layouts';
 
 function App() {
