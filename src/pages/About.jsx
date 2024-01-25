@@ -1,8 +1,8 @@
-import AboutUs from '../components/common/AboutUs';
-import CoinBg from '../components/common/CoinBg';
+import { Link } from 'react-router-dom';
 import MainLayout from '../components/MainLayout';
 import OptionFAQDropdown from '../components/OptionFAQDropdown';
-import { Link } from 'react-router-dom';
+import AboutUs from '../components/common/AboutUs';
+import CoinBg from '../components/common/CoinBg';
 
 const About = () => {
   return (
@@ -15,7 +15,7 @@ const About = () => {
         <div className="bg-gradient-to-br from-black py-20 to-opacity-50 ">
           <div className="text-center mb-28">
             <p className="text-[2.5rem] font-bold text-white max-md:text-[2rem] max-sm:text-[1.5rem]">
-              How <span className="text-[#D4B716]  ">FxtradingsLimited</span>{' '}
+              How <span className="text-[#D4B716]  ">VaultCoin</span>{' '}
               Works{' '}
             </p>
             <p className="text-[1.2rem] text-white max-sm:text-[1rem]">
@@ -72,11 +72,11 @@ const About = () => {
           <div
             className="py-10 px-5 w-[100%] xl:w-[60%] lg:w-[80%] my-16 mx-auto flex flex-col items-center text-center gap-5 justify-center "
             style={{
-              backgroundImage: 'url("/joinUs_bg.jpg") ',
+              backgroundImage: 'url("/connect_bg.png") ',
               backgroundRepeat: 'no-repeat',
               backgroundSize: 'cover',
               backgroundPosition: 'center',
-              boxShadow: '0 3px 15px #31c48d',
+              boxShadow: '0 3px 15px #1a56db50',
               borderRadius: '0.8rem',
             }}
           >
@@ -91,7 +91,7 @@ const About = () => {
               investment.
             </p>
             <Link to="/signup">
-              <button className="bg-green-500 border-0 text-white font-semibold px-8 py-3 rounded-lg">
+              <button className="bg-blue-700 border-0 text-white font-semibold px-8 py-3 rounded-lg">
                 Join Us
               </button>
             </Link>

@@ -1,8 +1,8 @@
-import React, { useState, useEffect } from 'react';
 import axios from 'axios';
-import { API_URL } from '../constants/api';
-import MainLayout from '../components/MainLayout';
+import React, { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
+import MainLayout from '../components/MainLayout';
+import { API_URL } from '../constants/api';
 
 const Register = () => {
   const [formData, setFormData] = useState({
@@ -138,24 +138,26 @@ const Register = () => {
 
   return (
     <div>
-      <div className="bg-black">
+      <div className="bg-gray-600 bg-[url('/jj-ying-7JX0-bfiuxQ-unsplash.jpg')] bg-contain bg-repeat">
         <MainLayout>
-          <div className="flex flex-col bg-black p-10 rounded-lg my-32 mx-auto w-[40%] max-xl:w-[60%] max-lg:w-[70%] max-sm:w-[100%] max-sm:p-1">
-            <div className="h-[15rem] px-5 flex flex-col justify-center gap-5 text-white border-2 border-solid border-green-300 border-b-0 rounded-lg rounded-bl-0 rounded-br-0">
-              <p className="text-[2rem] max-sm:text-[1.5rem]">
+          <div className="flex flex-col bg-gray-50 shadow-xl p-10 rounded-lg my-32 mx-auto w-[40%] max-xl:w-[60%] max-lg:w-[70%] max-sm:w-[100%] max-sm:p-1">
+            <div className="h-[15rem] px-5 flex flex-col justify-center gap-5 text-gray-600 border-b-0 rounded-lg rounded-bl-0 rounded-br-0">
+              <p className="text-[2rem] font-semibold max-sm:text-[1.5rem]">
                 Welcome To <br />{' '}
-                <span className="text-green-500  ">VaultCoinLimited</span>{' '}
+                <span className="text-blue-700  ">VaultCoin</span>{' '}
               </p>
               <p>
                 Our goal is to provide our investors with a reliable source of
                 high income, join us today.
               </p>
+              <p className='text-black font-medium'>
+                Please fill in the details below
+              </p>
             </div>
 
             <form
               onSubmit={handleSubmit}
-              className="text-white flex flex-col p-10 w-[100%] rounded-lg justify-center items-center border-2 border-solid border-green-300 py-10 px-5"
-              style={{ boxShadow: '0 3px 15px #D4B71680' }}
+              className="text-gray-500 font-medium flex flex-col p-10 w-[100%] rounded-lg justify-center items-center pt-0 py-10 px-5"
             >
               <div className="flex flex-col gap-4 mb-5 w-[100%]">
                 <label htmlFor="first_name">First Name</label>
@@ -165,7 +167,7 @@ const Register = () => {
                   value={formData.first_name}
                   onChange={handleInputChange}
                   required
-                  className="border-2 border-solid border-green-300 focus:border-green-500  bg-[transparent]  outline-none rounded-lg px-2 py-3 w-[100%]"
+                  className="bg-gray-100 border-2 border-solid border-gray-200 focus:border-blue-700  bg-[transparent]  outline-none rounded-lg px-2 py-3 w-[100%]"
                 />
               </div>
               <div className="flex flex-col gap-4 mb-5  w-[100%]">
@@ -176,7 +178,7 @@ const Register = () => {
                   value={formData.last_name}
                   onChange={handleInputChange}
                   required
-                  className="border-2 border-solid border-green-300 focus:border-green-500  bg-[transparent]  outline-none rounded-lg px-2 py-3  w-[100%]"
+                  className="bg-gray-100 border-2 border-solid border-gray-200 focus:border-blue-700  bg-[transparent]  outline-none rounded-lg px-2 py-3  w-[100%]"
                 />
               </div>
               <div className="flex flex-col gap-4 mb-5 w-[100%]">
@@ -186,7 +188,7 @@ const Register = () => {
                   id="country"
                   onChange={handleInputChange}
                   value={formData.country}
-                  className="bg-green-500"
+                  className="bg-gray-100 rounded-lg"
                 >
                   <option value="">Select Country</option>
                   {countries.map((country) => (
@@ -208,7 +210,7 @@ const Register = () => {
                   value={formData.email}
                   onChange={handleInputChange}
                   required
-                  className="border-2 border-solid border-green-300 focus:border-green-500  bg-[transparent]  outline-none rounded-lg px-2 py-3 w-[100%]"
+                  className="bg-gray-100 border-2 border-solid border-gray-200 focus:border-blue-700  bg-[transparent]  outline-none rounded-lg px-2 py-3 w-[100%]"
                 />
               </div>
               <div className="flex flex-col gap-4 mb-5  w-[100%]">
@@ -219,7 +221,7 @@ const Register = () => {
                   onChange={handleInputChange}
                   required
                   type="text"
-                  className="border-2 border-solid border-green-300 focus:border-green-500  bg-[transparent]  outline-none rounded-lg px-2 py-3 w-[100%]"
+                  className="bg-gray-100 border-2 border-solid border-gray-200 focus:border-blue-700  bg-[transparent]  outline-none rounded-lg px-2 py-3 w-[100%]"
                 />
               </div>
               <div className="flex flex-col gap-4 mb-5 relative w-[100%]">
@@ -230,7 +232,7 @@ const Register = () => {
                   value={formData.password}
                   onChange={handleInputChange}
                   required
-                  className="border-2 border-solid border-green-300 focus:border-green-500  bg-[transparent]  outline-none rounded-lg px-2 py-3 w-[100%]"
+                  className="bg-gray-100 border-2 border-solid border-gray-200 focus:border-blue-700  bg-[transparent]  outline-none rounded-lg px-2 py-3 w-[100%]"
                 />
                 <button
                   type="button"
@@ -248,7 +250,7 @@ const Register = () => {
                   value={formData.confirmPassword}
                   required
                   name="confirmPassword"
-                  className="border-2 border-solid border-green-300 focus:border-green-500 bg-[transparent]  outline-none rounded-lg px-2 py-3 w-[100%]"
+                  className="bg-gray-100 border-2 border-solid border-gray-200 focus:border-blue-700 bg-[transparent]  outline-none rounded-lg px-2 py-3 w-[100%]"
                 />
 
                 <button
@@ -270,7 +272,7 @@ const Register = () => {
                   value={formData.referral_code}
                   onChange={handleInputChange}
                   required
-                  className="text-white border-2 border-solid border-green-300 focus:border-green-500  bg-[transparent]  outline-none rounded-lg px-2 py-3 w-[100%]"
+                  className="text-white bg-gray-100 border-2 border-solid border-gray-200 focus:border-blue-700  bg-[transparent]  outline-none rounded-lg px-2 py-3 w-[100%]"
                 />
               </div>
               <div className="flex items-center gap-3 ">
@@ -284,11 +286,11 @@ const Register = () => {
                 />
                 <p>
                   I agree with{' '}
-                  <span className="text-green-500  cursor-pointer">
+                  <span className="text-blue-700  cursor-pointer">
                     Privacy & Policy
                   </span>{' '}
                   ,{' '}
-                  <span className="text-green-500  cursor-pointer">
+                  <span className="text-blue-700  cursor-pointer">
                     Terms & Condition
                   </span>
                 </p>
@@ -298,7 +300,7 @@ const Register = () => {
                 <button
                   type="submit"
                   disabled={isLoading}
-                  className="bg-white text-green-500 px-3 py-2 text-center relative left-1/2 my-10 -translate-x-[50%]"
+                  className="border-2 border-blue-700 rounded-lg bg-white text-blue-700 px-3 py-2 text-center relative left-1/2 my-10 -translate-x-[50%]"
                 >
                   {isLoading ? 'Creating...' : 'Create User'}
                 </button>
@@ -311,7 +313,7 @@ const Register = () => {
                   Have an account?{' '}
                   <Link to="/SignIn">
                     {' '}
-                    <span className="text-green-500  cursor-pointer">
+                    <span className="text-blue-700  cursor-pointer">
                       Login
                     </span>{' '}
                   </Link>

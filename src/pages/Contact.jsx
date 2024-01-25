@@ -5,12 +5,12 @@ import AddressCard from '../components/utils/cards/AddressCard';
 
 const Contact = () => {
   return (
-    <div className='bg-black'>
+    <div className='bg-white'>
       <MainLayout>
         <CoinBg title="Contact Us" description="Contact Us" />
         <div
-          className="flex flex-col xl:flex-row w-[100%] flex-wrap bg-black "
-          style={{ boxShadow: '0 3px 15px rgba(208, 64, 41, 0.5)' }}
+          className="flex flex-col xl:flex-row w-[100%] flex-wrap bg-white "
+          style={{ boxShadow: '0 3px 15px white' }}
         >
           <div
             className=" h-[100vh] w-[50%] hidden xl:block"
@@ -40,7 +40,7 @@ const Contact = () => {
                     type="text"
                     name=""
                     id=""
-                    className="border-2 border-solid border-green-600 bg-white outline-none rounded-lg py-3 px-2 focus:border-[1px] focus:border-green-400 "
+                    className="border-2 border-solid border-blue-700 bg-white outline-none rounded-lg py-3 px-2 focus:border-[1px] focus:border-green-400 "
                   />
                 </div>
 
@@ -50,7 +50,7 @@ const Contact = () => {
                     type="email"
                     name=""
                     id=""
-                    className="border-2 border-solid border-green-600 bg-white outline-none rounded-lg py-3 px-2 focus:border-[1px] focus:border-green-400 "
+                    className="border-2 border-solid border-blue-700 bg-white outline-none rounded-lg py-3 px-2 focus:border-[1px] focus:border-blue-500 "
                   />
                 </div>
               </div>
@@ -60,7 +60,7 @@ const Contact = () => {
                   type="text"
                   name=""
                   id=""
-                  className="border-2 border-solid border-green-600 bg-white outline-none rounded-lg py-3 px-2 focus:border-[1px] focus:border-green-400 "
+                  className="border-2 border-solid border-blue-700 bg-white outline-none rounded-lg py-3 px-2 focus:border-[1px] focus:border-blue-500 "
                 />
               </div>
 
@@ -68,18 +68,18 @@ const Contact = () => {
                 type="text"
                 name=""
                 id=""
-                className="border-2 border-solid border-green-600 bg-white outline-none rounded-lg py-3 px-2 h-[10rem] w-full focus:border-green-400"
+                className="border-2 border-solid border-blue-700 bg-white outline-none rounded-lg py-3 px-2 h-[10rem] w-full focus:borderbluen5400"
               />
-              <button className="text-white  w-[25%] font-bold py-3  bg-green-500  rounded-lg max-sm:w-[40%]">
+              <button className="text-white  w-[25%] font-bold py-3  bg-blue-700  rounded-lg max-sm:w-[40%]">
                 Send Message
               </button>
             </form>
           </div>
         </div>
 
-        <div className='flex justify-center gap-10 py-10 min-h-[70vh] bg-white items-center flex-wrap max-sm:mt-10'>
+        <div className='flex justify-center gap-10 py-6 min-h-[60vh] bg-white items-center flex-wrap max-sm:mt-8'>
           <AddressCard title={"Phone Number"} description={"+1 (331) 704-0512"} />
-          <AddressCard title={"Email Address"} description={"admin@fxtradingslimited.com"} />
+          <AddressCard title={"Email Address"} description={"admin@VaultCoin.com"} />
           <AddressCard title={"Office Address"} description={"3015 Suit pagla road, Singapore"} />
         </div>
       </MainLayout>
