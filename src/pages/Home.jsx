@@ -1,6 +1,5 @@
-import { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
-import bg_fxtrad from '../assets/6262908.jpg';
+import bg_fxtrad from '../assets/marga-santoso-OmPqCwX422Y-unsplash.jpg';
 import MainLayout from '../components/MainLayout';
 import OptionFAQDropdown from '../components/OptionFAQDropdown';
 import StockSteps from '../components/StockSteps';
@@ -13,7 +12,7 @@ import TableRendering from '../components/utils/cards/TableRedering';
 
 
 const Home = () => {
-  
+
   return (
     <MainLayout>
       <div className="relative w-full h-[90vh] ">
@@ -21,7 +20,7 @@ const Home = () => {
         <div className="absolute flex flex-col justify-center  gap-12 top-[5rem] bg-opacity-10 text-white pl-3 lg:pl-5 xl:pl-10 max-md:top-[4rem] max-sm:top-[3rem]">
           <div className="laviossa text-[2.6rem] font-bold w-[30rem] max-lg:text-[2.4rem] max-lg:w-[100%] max-md:text-[2rem]  max-sm:text-[1.5rem] max-sm:m-0">
             Invest for Future in a Stable Platform <br />
-            <p className="text-green-300 ">
+            <p className="text-blue-500 ">
               Rely on us for a <br /> better future
             </p>
           </div>
@@ -37,7 +36,7 @@ const Home = () => {
             security of your investment.
           </ul>
           <Link to="/signup">
-            <button className="text-white font-bold py-3 px-5 bg-green-500  rounded-lg">
+            <button className="text-white font-bold py-3 px-5 bg-blue-700  rounded-lg">
               Start learning
             </button>
           </Link>
@@ -49,7 +48,7 @@ const Home = () => {
       {/* <StockSwiper /> */}
       <div className="px-5 lg:px-10 xl:px-20 py-[3rem] my-[3rem] bg-gray-100">
         <p className="text-[2rem] font-bold tracking-wide text-[#1A2433] text-center max-sm:text-[1.5rem]">
-          Available <span className="text-green-500 ">Plans</span>
+          Available <span className="text-blue-700 ">Plans</span>
         </p>
         <p className="text-center mt-5">
           To make a solid investment, you have to know where you are investing.
@@ -58,11 +57,11 @@ const Home = () => {
         <StockSteps />
       </div>
 
-      <div className="bg-gradient-to-br from-black py-20 to-opacity-50 flex flex-col items-center gap-16 justify-center text-[#fff]">
+      <div className="bg-white py-20 to-opacity-50 flex flex-col items-center gap-16 justify-center text-black">
         <div className="text-center max-sm:px-5">
           <p className="text-[2rem] max-sm:text-[1.5rem]">
             Why Choose <br />{' '}
-            <span className="text-green-500  ">FxtradingsLimited</span>{' '}
+            <span className="text-blue-500  ">VaultCoin</span>{' '}
           </p>
           <p className="text-[1rem]">
             Our goal is to provide our investors with a reliable source of high
@@ -227,7 +226,7 @@ const Home = () => {
         </div>
       </div> */}
 
-      <div className="bg-white text-black pt-20 ">
+      <div className="bg-gray-100 text-black pt-20 ">
         <p className="text-center text-[1.2rem] px-4">
           Here is the log of the most recent transactions including withdraw and
           deposit made by our <br /> users.
@@ -240,7 +239,7 @@ const Home = () => {
 
       <div className="text-center mt-20">
         <p className="text-[2rem] font-semibold max-sm:text-[1.5rem]">
-          Our Expert<span className="text-green-500 ">Team Members</span>
+          Our Expert<span className="text-gray-700 ">Team Members</span>
         </p>
         <p className="my-[1rem] text-[1rem] ">
           We have a great team including developers, designers, and Traders. The
@@ -252,7 +251,7 @@ const Home = () => {
       <div className="bg-gray-100 min-h-[50vh] py-10">
         <div className="text-center my-20 ">
           <p className="text-[2rem] font-semibold text-gray-700 max-sm:text-[1.5rem]">
-            Frequently Asked <span className="text-green-500 ">Questions</span>
+            Frequently Asked <span className="text-blue-700 ">Questions</span>
           </p>
           <p className="my-[1rem] text-[1rem] text-gray-800">
             We answer some of your Frequently Asked Questions regarding our

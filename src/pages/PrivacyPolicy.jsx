@@ -29,7 +29,7 @@ const PrivacyPolicy = () => {
           client of ours or a potential investor in a Fund. You contact us or
           our affiliates by email, telephone, or any other means. You are a
           visitor to any website operated by us or our affiliates
-          (“fxtradingslimited.com”). You are a representative of a supplier,
+          (“VaultCoin.com”). You are a representative of a supplier,
           service provider, professional adviser, consultant, or business
           partner of ours or a Fund (“Service Providers”). You are a director,
           officer, or senior manager of a listed company in which we or a Fund
@@ -66,10 +66,10 @@ const PrivacyPolicy = () => {
           and disposal, which are set for the archive of our company. To receive
           your personal information, contact directly with our employees.
           <p className='text-[1.4rem] font-semibold mt-5'> Contact Information </p>
-          Fxtradingslimited is glad to receive your comments concerning this
+          VaultCoin is glad to receive your comments concerning this
           "Privacy Policy". In case you think that Cloxminers does not follow
           the rules and violate this Statement, contact us at
-          admin@fxtradingslimited.com We guarantee that we will take
+          admin@VaultCoin.com We guarantee that we will take
           commercially reasonable efforts to discover and solve the problem.
         </div>
       </MainLayout>

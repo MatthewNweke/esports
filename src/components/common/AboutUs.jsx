@@ -55,7 +55,7 @@ const AboutUs = () => {
           innovative approach to business development are some driving forces
           behind our success.
         </div>
-        <button className="text-white  py-3 px-5 bg-green-500  rounded-lg mt-5">
+        <button className="text-white  py-3 px-5 bg-blue-700  rounded-lg mt-5">
           View document
         </button>
       </div>

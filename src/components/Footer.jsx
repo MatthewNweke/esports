@@ -26,7 +26,7 @@ export default function Footer() {
 
       <div className="flex px-5 justify-between text-[#fff]  items-center h-[100%] max-sm:flex-col max-sm:justify-center max-sm:gap-10">
         <p className="text-sm">
-          © 2019 FxTradingsLimited. All rights reserved
+          © 2019 VaultCoin. All rights reserved
         </p>
         <p>160 Bovet Road San Mateo California 94402</p>
       </div>
