@@ -1,5 +1,5 @@
 // src/components/MainContent.js
-
+import { useState } from 'react';
 import React from 'react';
 import Deposits from './Deposits';
 import Withdrawal from './Withdrawal';
@@ -36,9 +36,13 @@ const MainContent = ({ selectedItem }) => {
     'My Referral': <MyReferral />,
     Notifications: <Notification />,
     'Contact Support': <Contact/>,
-    Logout: "",
+  Logout: "",
     "ooo":<p className='hidden'>iiii</p>
   };
+
+
+  
+
 
   return (
     <main className=" px-3 overflow-hidden w-[75%] translate-x-[-50%] relative left-[50%] my-0 mx-auto max-lg:w-[100%] max-md:px-1 max-lg:mt-10">

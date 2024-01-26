@@ -1,6 +1,43 @@
+import { useState } from 'react';
 import PricingPlan from '../components/PricingPlan';
 
 const Profile = () => {
+  const [userName, setUserName] = useState('');
+  const [email, setEmail] = useState('');
+  const [country, setCountry] = useState('');
+
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+
+    const userProfileData = {
+      username:uername,
+      email:email,
+      country: country,
+      
+    };
+
+    try {
+      const response = await fetch('https://vaultcoin-production.up.railway.app/userprofile', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify(userProfileData),
+      });
+
+      if (response.ok) {
+        
+        console.log('Profile successfully updated');
+      } else {
+      
+        console.error('Failed to update profile');
+      }
+    } catch (error) {
+      // Handle unexpected errors, e.g., show a generic error message
+      console.error('Error updating profile', error);
+    }
+  };
+
   return (
     <div>
       <div className="text-center rounded h-[8rem] w-[100%] m-0">
@@ -14,38 +51,42 @@ const Profile = () => {
         </p>
       </div>
       <div className="bg-white py-10 min-h-[50vh] shadow-xl px-16 justify-between flex items-center gap-[10%] max-lg:flex-col max-lg:px-5">
-        <form action="" className="w-[60%] max-lg:w-[100%] shadow-xl">
+        <form action="" onSubmit={handleSubmit} className="w-[60%] max-lg:w-[100%] shadow-xl">
           <div className=" flex flex-col  gap-2">
-            <label htmlFor="">UserName</label>
-            <input type="text" className="w-[100%] rounded" />
+            <label htmlFor="userName">UserName</label>
+            <input
+              type="text"
+              id="userName"
+              value={userName}
+              onChange={(e) => setUserName(e.target.value)}
+              className="w-[100%] rounded"
+            />
           </div>
           <div className="flex flex-col gap-2">
-            <label htmlFor="">Email</label>
-            <input type="email" className="w-[100%] rounded" />
+            <label htmlFor="email">Email</label>
+            <input
+              type="email"
+              id="email"
+              value={email}
+              onChange={(e) => setEmail(e.target.value)}
+              className="w-[100%] rounded"
+            />
           </div>
           <div className="flex flex-col gap-2">
-            <label htmlFor="">Country</label>
-            <select name="" id="" className="w-[100%] rounded cursor-pointer">
+            <label htmlFor="country">Country</label>
+            <select
+              id="country"
+              value={country}
+              onChange={(e) => setCountry(e.target.value)}
+              className="w-[100%] rounded cursor-pointer"
+            >
               <option value="">lorem</option>
               <option value="">lorem</option>
               <option value="">lorem</option>
             </select>
           </div>
         </form>
-        <form action="" className="w-[30%] max-lg:w-[100%] shadow-xl">
-          <div>
-            <label htmlFor="">jiiihehoehor</label>
-            <input type="text" className="w-[100%] rounded" />
-          </div>
-          <div>
-            <label htmlFor="">jiiihehoehor</label>
-            <input type="text" className="w-[100%] rounded" />
-          </div>
-          <div>
-            <label htmlFor="">jiiihehoehor</label>
-            <input type="text" className="w-[100%] rounded" />
-          </div>
-        </form>
+        
       </div>
       <PricingPlan />
     </div>

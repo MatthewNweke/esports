@@ -1,7 +1,5 @@
 import React, { useState } from 'react';
 
-
-
 const NotificationDropdown = () => {
   // Implement your notification dropdown content here
   return (
@@ -17,12 +15,36 @@ const NotificationDropdown = () => {
   );
 };
 
-
-
-
 const Sides = ({ onItemSelected }) => {
   const [mobileMenu, setMobileMenu] = useState(false);
   const [showNotifications, setShowNotifications] = useState(false);
+
+  const [logoutStatus, setLogoutStatus] = useState(null);
+
+  const handleLogout = async () => {
+    try {
+      const response = await fetch('https://vaultcoin-production.up.railway.app/user/auth/logout/', {
+        method: 'POST', // or 'GET' depending on your API
+        headers: {
+          'Content-Type': 'application/json',
+          // You may need to include additional headers based on your API requirements
+        },
+        // You may need to include a body if your API requires it
+        // body: JSON.stringify({}),
+      });
+
+      if (response.status === 201) {
+        // Successful logout
+        setLogoutStatus('Logout successful');
+      } else {
+        // Handle other response status codes as needed
+        setLogoutStatus('Logout failed');
+      }
+    } catch (error) {
+      console.error('Error during logout:', error);
+      setLogoutStatus('An error occurred during logout');
+    }
+  };
 
   const sidebarItems = [
     'Dashboard',
@@ -40,17 +62,33 @@ const Sides = ({ onItemSelected }) => {
     'My Referral',
     'Notifications',
     'Contact Support',
-    'Logout',
+    <div>
+      <button onClick={handleLogout}>Logout</button>
+      {logoutStatus && <p>{logoutStatus}</p>}
+    </div>
   ];
-  
 
   return (
-    <div className={`fixed top-0 w-72 max-lg:w-56  ${mobileMenu ? 'z-50 w-0' : 'z-50'}`}>
-      <div className={`bg-green-500 items-center z-50 flex justify-between pr-10  max-lg:w-[100vw] inset-0 py-2 lg:hidden ${mobileMenu ? 'z-50' : ''}`}>
-        <button onClick={() => setMobileMenu(!mobileMenu)} className="lg:hidden text-2xl block border rounded border-black p-3 relative left-3">
+    <div
+      className={`fixed top-0 w-72 max-lg:w-56  ${
+        mobileMenu ? 'z-50 w-0' : 'z-50'
+      }`}
+    >
+      <div
+        className={`bg-green-500 items-center z-50 flex justify-between pr-10  max-lg:w-[100vw] inset-0 py-2 lg:hidden ${
+          mobileMenu ? 'z-50' : ''
+        }`}
+      >
+        <button
+          onClick={() => setMobileMenu(!mobileMenu)}
+          className="lg:hidden text-2xl block border rounded border-black p-3 relative left-3"
+        >
           &#9776;
         </button>
-        <li className="cursor-pointer relative bottom-2" onClick={() => setShowNotifications(!showNotifications)}>
+        <li
+          className="cursor-pointer relative bottom-2"
+          onClick={() => setShowNotifications(!showNotifications)}
+        >
           <img src="/notification_bell.svg" alt="" />
           {showNotifications && <NotificationDropdown />}
         </li>

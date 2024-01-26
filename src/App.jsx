@@ -1,4 +1,8 @@
 import './App.css';
+import { useEffect } from 'react';
+import { Routes, Route, useLocation } from 'react-router-dom';
+
+// Import your components
 import About from './pages/About';
 import Contact from './pages/Contact';
 import Register from './pages/Register';
@@ -10,12 +14,6 @@ import Dashboard from './dashboard/Dashboard';
 import SignIn from './dashboard/SignIn';
 import MyReferral from './dashboard/MyReferral';
 import Payment from './dashboard/Payment';
-
-
-import { useEffect } from 'react';
-// import { Routes, Route, useLocation } from 'react';
-import{Routes, Route, useLocation} from 'react-router-dom'
-// import { Dashboard, Auth } from './components/dashboard/layouts';
 
 function App() {
   const location = useLocation();
@@ -29,6 +27,7 @@ function App() {
   return (
     <div>
       <Routes>
+        {/* Public Routes */}
         <Route path="/" element={<Home />} />
         <Route path="/plan" element={<Plan />} />
         <Route path="/about" element={<About />} />
@@ -36,10 +35,18 @@ function App() {
         <Route path="/signup" element={<Register />} />
         <Route path="/privacy-policy" element={<PrivacyPolicy />} />
         <Route path="/terms&condition" element={<Terms />} />
-        <Route path="/dashboard" element={<Dashboard />} /> 
-        <Route path="/signin" element={<SignIn />} /> 
-        <Route path="/referral" element={<MyReferral />} />  
-        <Route path="/payment" element={<Payment />} />  
+        <Route path="/signin" element={<SignIn />} />
+        {/* Dashboard Routes */}
+        <Route
+          path="/dashboard"
+          element={
+            /* You might want to use a layout or Outlet here for nested routes */
+            <Dashboard />
+          }
+        />
+        
+        <Route path="/dashboard/referral" element={<MyReferral />} />
+        <Route path="/dashboard/payment" element={<Payment />} />
       </Routes>
     </div>
   );

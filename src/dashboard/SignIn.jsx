@@ -1,68 +1,46 @@
+// Login.jsx
 import React, { useState } from 'react';
 import axios from 'axios';
-import { API_URL } from '../constants/api';
 
-
-const SignIn = () => {
+const Login = () => {
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
-  const [error, setError] = useState(null);
-  
-  // Get the history object
- 
 
-  const handleSignIn = async (e) => {
+  const handleLogin = async (e) => {
     e.preventDefault();
 
     try {
-      const response = await axios.post(`${API_URL}/user/auth/login/`, {
-        email: email,
-        password: password,
-      });
+      const response = await axios.post(
+        'your-login-api-endpoint',
+        { email, password }
+      );
 
-      // Successful login, handle the response accordingly
-      console.log('Login successful!', response.data);
-      setError(null); // Clear any previous error
-
-
-      
+      // Assuming successful login, save the token
+      const token = response.data.token;
+      // You can store the token in sessionStorage or localStorage
+      sessionStorage.setItem('token', token);
+      // Redirect to the dashboard or another page
+      window.location.href = '/dashboard';
     } catch (error) {
-      // Handle error
-      console.error(
-        'Login failed:',
-        error.response ? error.response.data : error.message
-      );
-      setError(
-        error.response
-          ? error.response.data.non_field_errors[0] // Adjust for your backend response
-          : 'An error occurred during login.'
-      );
+      console.error('Login Error', error.response.data);
+      // Handle login error, show error message to the user
     }
   };
 
   return (
-    <div className="mx-auto mt-40 fixed inset-0">
-      <h2 className="text-[2rem] font-semibold mb-4 text-center text-green-600 ">
-        SignIn
-      </h2>
-      <form className="max-w-md mx-auto relative" onSubmit={handleSignIn}>
-        {/* ... Your existing form fields ... */}
+    <div>
+      <h2>Login</h2>
+      <form onSubmit={handleLogin}>
+        <label>Email:</label>
+        <input type="email" value={email} onChange={(e) => setEmail(e.target.value)} required />
 
-        <button
-          type="submit"
-          className="bg-green-500 absolute left-1/2 translate-x-[-50%] text-white px-4 py-2 rounded-md hover:bg-green-600"
-        >
-          SignIn
-        </button>
+        <label>Password:</label>
+        <input type="password" value={password} onChange={(e) => setPassword(e.target.value)} required />
 
-        {error && (
-          <p style={{ color: 'red' }} className="p-2">
-            {error}
-          </p>
-        )}
+        <button type="submit">Login</button>
       </form>
     </div>
   );
 };
 
-export default SignIn;
+export default Login;
