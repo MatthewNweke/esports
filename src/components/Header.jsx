@@ -74,7 +74,7 @@ const Header = () => {
 
       {/* Slide-in Menu */}
       <div
-        className={`lg:hidden fixed top right-0 h-full w-full bg-blue-700 transition-transform duration-300 ease-in-out ${
+        className={`lg:hidden fixed top right-0 h-full w-full bg-[#111] transition-transform duration-300 ease-in-out ${
           isMenuOpen ? 'transform translate-x-0' : 'transform translate-x-full'
         }`}
       >

@@ -44,43 +44,10 @@ const Home = () => {
         />
         <AboutUs />
 
-        <div className=" py-20 to-opacity-50 flex flex-col items-center gap-16 justify-center text-black">
-          <div className="text-center max-sm:px-5">
-            <p className="text-[2rem] max-sm:text-[1.5rem]">
-              Why Choose <br /> <span className="text-blue-500  ">Esports</span>{' '}
-            </p>
-            <p className="text-[1rem]">
-              Our goal is to provide our investors with a reliable source of
-              high income, while <br /> minimizing any possible risks and
-              offering a high-quality service.
-            </p>
-          </div>
+       
 
-          
-        </div>
 
-        <div className="text-center mt-20">
-          <p className="text-[2rem] font-semibold max-sm:text-[1.5rem]">
-            Our Expert<span className="text-gray-700 ">Team Members</span>
-          </p>
-          <p className="my-[1rem] text-[1rem] ">
-            We have a great team including developers, designers, and Traders.
-            The Team always working <br /> hard to give you the maximum profit.
-          </p>
-        </div>
-
-        <div className=" min-h-[50vh] py-10">
-          <div className="text-center my-20 ">
-            <p className="text-[2rem] font-semibold text-gray-700 max-sm:text-[1.5rem]">
-              Frequently Asked <span className="text-blue-700 ">Questions</span>
-            </p>
-            <p className="my-[1rem] text-[1rem] text-gray-800">
-              We answer some of your Frequently Asked Questions regarding our
-              platform. If you have a <br />
-              query that is not answered here, Please contact us.
-            </p>
-          </div>
-        </div>
+        
       </div>
     </MainLayout>
   );
