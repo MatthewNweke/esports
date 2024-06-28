@@ -1,8 +1,6 @@
 import { Link } from 'react-router-dom';
-import data from '../data/footer.json';
 
 export default function Footer() {
-  console.log({ data });
   return (
     <section
       className="w-full h-[30vh] md:h-[50vh] mx-auto py-9 px-5 lg:px-10 xl:px-20"
